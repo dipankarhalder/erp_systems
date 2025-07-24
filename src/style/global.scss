@@ -1,3 +1,8 @@
-@import "./core/font.scss";
-@import "./core/color.scss";
-@import "./core/mixin.scss";
+@use "./core/index" as core;
+
+body {
+  font-family: core.$font;
+  background-color: core.$white;
+
+  @include core.row;
+}
