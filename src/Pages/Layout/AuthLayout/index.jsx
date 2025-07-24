@@ -1,21 +1,21 @@
-import { Outlet,  } from "react-router-dom"; // useLocation
-// import { appPath } from "../../../constant";
+import { Outlet, useLocation } from "react-router-dom";
+import { appPath } from "../../../constant";
 
-// const backgroundMap = {
-//   [appPath.LOGIN]: "/authbg.png",
-//   [`/${appPath.REGISTER}`]: "/createbg.png",
-//   [`/${appPath.OTP}`]: "/otpbg.png",
-//   [`/${appPath.FORGOT}`]: "/forgotbg.png",
-// };
-
+const backgroundMap = {
+  [appPath.LOGIN]: "/authbg.png",
+  [`/${appPath.REGISTER}`]: "/createbg.png",
+  [`/${appPath.OTP}`]: "/otpbg.png",
+  [`/${appPath.FORGOT}`]: "/forgotbg.png",
+};
 
 export const AuthLayout = () => {
-  // const location = useLocation();
-  // const bgImage = backgroundMap[location.pathname];
+  const location = useLocation();
+  const bgImage = backgroundMap[location.pathname];
 
   return (
-      <div>
-        <Outlet />
-      </div>
+    <div>
+      <Outlet />
+      <div style={{ backgroundImage: `url(${bgImage})` }} />
+    </div>
   );
 };
