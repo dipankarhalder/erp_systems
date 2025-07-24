@@ -1,0 +1,37 @@
+@mixin row {
+  display: flex;
+  flex-direction: row;
+}
+@mixin column {
+  display: flex;
+  flex-direction: column;
+}
+@mixin center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@mixin center_h {
+  display: flex;
+  align-items: center;
+}
+@mixin center_v {
+  display: flex;
+  justify-content: center;
+}
+@mixin wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@mixin icons($size) {
+  & > span {
+    width: $size;
+    height: $size;
+
+    & > svg {
+      width: $size;
+      height: $size;
+    }
+  }
+}
