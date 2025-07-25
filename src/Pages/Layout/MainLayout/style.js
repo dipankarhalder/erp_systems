@@ -7,8 +7,8 @@ export const AppLayoutCover = styled.div`
 `;
 
 export const AppContentArea = styled.div`
-  width: calc(100% - 250px);
+  width: calc(100% - 230px);
   padding: 0px;
-  margin-left: 250px;
+  margin-left: 230px;
   margin-top: 55px;
 `;

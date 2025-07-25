@@ -10,7 +10,7 @@ import {
 export const AppSideBar = styled.div`
   display: flex;
   flex-direction: column;
-  width: 250px;
+  width: 230px;
   height: 100vh;
   padding: 16px 20px;
   overflow-y: auto;
@@ -45,13 +45,13 @@ export const AppSidebarLinkCover = styled.div`
 
 export const SidebarItem = styled.div`
   width: 100%;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 `;
 
 export const SidebarTitle = styled.h4`
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 700;
-  margin-bottom: 4px;
+  margin-bottom: 2px;
   text-transform: uppercase;
   ${textColor("blue")};
   ${fontFamily};
@@ -98,20 +98,20 @@ export const SidebarLinkStyled = styled(Link)`
   display: flex;
   align-items: center;
   gap: 12px;
-  padding: 8px 10px;
+  padding: 5px 7px;
   text-decoration: none;
   border-radius: 4px;
   ${textColor("text")};
   ${fontFamily};
 
   & > span {
-    width: 17px;
-    height: 17px;
+    width: 14px;
+    height: 14px;
     ${textColor("navText")};
 
     & > svg {
-      width: 17px;
-      height: 17px;
+      width: 14px;
+      height: 14px;
     }
   }
 
