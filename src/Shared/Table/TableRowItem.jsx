@@ -1,5 +1,13 @@
 import React from "react";
-import { Share, Edit, Delete, CheckVerify, CheckPlus } from "../Icons";
+import {
+  Share,
+  Edit,
+  Delete,
+  CheckVerify,
+  CheckPlus,
+  GreenTick,
+} from "../Icons";
+import { letterColors } from "../../Constant";
 import { ActionTableButton } from "./style";
 
 export const TableRowItem = React.memo(
@@ -49,6 +57,20 @@ export const TableRowItem = React.memo(
             );
           }
 
+          if (key === "approve") {
+            return (
+              <td key={key}>
+                <span
+                  className={item[key] ? "app_tick_actv" : "app_tick_inactv"}
+                  onClick={() => (item[key] ? "" : onAction("approve", item))}
+                  title={item[key] ? "Approved" : "Not Approved"}
+                >
+                  <GreenTick />
+                </span>
+              </td>
+            );
+          }
+
           if (key === "priority") {
             return (
               <td key={key}>
@@ -72,6 +94,9 @@ export const TableRowItem = React.memo(
           }
 
           if (key === viewBtn) {
+            const initial = item.name?.charAt(0).toUpperCase();
+            const bgColor = letterColors[initial] || "#ccc";
+
             return (
               <td key={key}>
                 <button
@@ -83,15 +108,25 @@ export const TableRowItem = React.memo(
                       <img src={item.image} alt={item.name} />
                     </div>
                   ) : (
-                    <div className="app_fallback">{item.name?.charAt(0)}</div>
+                    <div
+                      className="app_fallback"
+                      style={{
+                        backgroundColor: bgColor,
+                        border: `1px solid ${bgColor}`,
+                      }}
+                    >
+                      {item.name?.charAt(0)}
+                    </div>
                   )}
                   <p>{item[key].toString()}</p> <Share />
                 </button>
               </td>
             );
           }
+
           return <td key={key}>{item[key]}</td>;
         })}
+
         <ActionTableButton>
           {enableStatus && (
             <button
