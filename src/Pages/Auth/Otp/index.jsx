@@ -6,7 +6,6 @@ import { yupResolver } from "@hookform/resolvers/yup";
 
 import { paths } from "../../../Constant";
 import { Button } from "../../../Shared/Button";
-import { Logo } from "../../../Components/Common/Logo";
 import { Input } from "../../../Shared/Input";
 import { ToastContext } from "../../../Shared/Toast/context/ToastContext";
 
@@ -108,7 +107,6 @@ export const OtpVerificationPage = () => {
   return (
     <AppSignin>
       <AppInsideSignin>
-        <Logo />
         <AppHeadingSignin>
           <h1>Verify OTP</h1>
           <p>Enter the 4-digit code sent to your email</p>
