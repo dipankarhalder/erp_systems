@@ -1,5 +1,9 @@
-import React from "react";
+import { Input } from "../../../Shared/Input";
 
 export const LoginPage = () => {
-  return <div>LoginPage</div>;
+  return (
+    <div className="appAuthentication">
+      <Input />
+    </div>
+  );
 };
