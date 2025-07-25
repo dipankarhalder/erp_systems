@@ -255,6 +255,15 @@ export const TableContainer = styled.div`
             top: -2px;
           }
 
+          & > span.app_tick_actv,
+          & > span.app_tick_inactv {
+            position: relative;
+            padding: 4px 10px;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+          }
+
           & > span.app_status_actv {
             color: ${({ theme }) => theme.colors.green};
             background-color: ${({ theme }) => theme.colors.successbg};
@@ -277,6 +286,24 @@ export const TableContainer = styled.div`
             color: ${({ theme }) => theme.colors.info};
             background-color: ${({ theme }) => theme.colors.infobg};
             border: 1px solid ${({ theme }) => theme.colors.info};
+          }
+
+          & > span.app_tick_actv {
+            cursor: not-allowed;
+
+            svg path.colorSvg {
+              fill: #38d511;
+              stroke: #38d511;
+            }
+          }
+
+          & > span.app_tick_inactv {
+            cursor: pointer;
+
+            svg path.colorSvg {
+              fill: #cbcbcb;
+              stroke: #cbcbcb;
+            }
           }
 
           & > span.app_high,

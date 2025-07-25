@@ -37,6 +37,7 @@ import { StudentsPage } from "../Pages/Main/Students";
 import { StudyMaterialsPage } from "../Pages/Main/StudyMaterials";
 import { StuffPage } from "../Pages/Main/Stuff";
 import { TeachersPage } from "../Pages/Main/Teachers";
+import { VendorsPage } from "../Pages/Main/Vendors";
 
 export const router = createBrowserRouter([
   {
@@ -177,6 +178,10 @@ export const router = createBrowserRouter([
       {
         path: paths.PROFILE,
         element: <ProfilePage />,
+      },
+      {
+        path: paths.VENDORS,
+        element: <VendorsPage />,
       },
     ],
   },

@@ -18,7 +18,7 @@ export const sidebarLink = [
       { id: 1, title: "Warehouse", path: paths.ADMIN, icon: SideArrow },
       { id: 2, title: "Products", path: paths.AUTH, icon: SideArrow },
       { id: 3, title: "Stocks", path: paths.HOSTEL, icon: SideArrow },
-      { id: 4, title: "Vendors", path: paths.LABORATORY, icon: SideArrow },
+      { id: 4, title: "Vendors", path: paths.VENDORS, icon: SideArrow },
     ],
   },
   {
