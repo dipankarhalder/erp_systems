@@ -1,5 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
-import { appPath } from "../constant";
+import { appPath } from "../Constant";
 import {
   AuthLayout,
   MainLayout,

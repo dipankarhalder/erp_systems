@@ -1,5 +1,5 @@
 import { Outlet, useLocation } from "react-router-dom";
-import { appPath } from "../../../constant";
+import { appPath } from "../../../Constant";
 
 const backgroundMap = {
   [appPath.LOGIN]: "/authbg.png",
@@ -13,9 +13,14 @@ export const AuthLayout = () => {
   const bgImage = backgroundMap[location.pathname];
 
   return (
-    <div>
-      <Outlet />
-      <div style={{ backgroundImage: `url(${bgImage})` }} />
+    <div className="mainAppsCover">
+      <div className="mainAppContent">
+        <Outlet />
+      </div>
+      <div
+        className="mainAppBackground"
+        style={{ backgroundImage: `url(${bgImage})` }}
+      />
     </div>
   );
 };
