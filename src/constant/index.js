@@ -64,6 +64,8 @@ export const paths = {
   SETTING: "settings",
   PROFILE: "profile",
   VENDORS: "vendors",
+  PRODUCTS: "products",
+  WAREHOUSE: "warehouse",
 };
 
 export const letterColors = {

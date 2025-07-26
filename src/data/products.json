@@ -1,0 +1,230 @@
+[
+  {
+    "name": "Polymer",
+    "description": "Slim wireless Bluetooth keyboard with rechargeable battery.",
+    "price": 39.99,
+    "category": "Electronics",
+    "subcategory": "Accessories",
+    "stockQuantity": 85,
+    "inStock": "Available",
+    "manufacture_date": "05-01-2025",
+    "expire_date": "05-01-2028",
+    "stock_price": 3399.15,
+    "images": [
+      {
+        "url": "/1.png",
+        "alt": "Bluetooth keyboard front view"
+      }
+    ],
+    "vendor": "Vendor Name"
+  },
+  {
+    "name": "Polymer",
+    "description": "Over-ear headphones with ANC and 30-hour battery life.",
+    "price": 79.99,
+    "category": "Electronics",
+    "subcategory": "Audio",
+    "stockQuantity": 60,
+    "inStock": "Available",
+    "manufacture_date": "10-03-2025",
+    "expire_date": "10-03-2028",
+    "stock_price": 4799.4,
+    "images": [
+      {
+        "url": "/1.png",
+        "alt": "Black noise cancelling headphones"
+      }
+    ],
+    "vendor": "Vendor Name"
+  },
+  {
+    "name": "Polymer",
+    "description": "Compact power bank with dual USB outputs.",
+    "price": 24.50,
+    "category": "Electronics",
+    "subcategory": "Chargers",
+    "stockQuantity": 150,
+    "inStock": "Available",
+    "manufacture_date": "15-02-2025",
+    "expire_date": "15-02-2027",
+    "stock_price": 3675,
+    "images": [
+      {
+        "url": "/1.png",
+        "alt": "Compact power bank in black"
+      }
+    ],
+    "vendor": "Vendor Name"
+  },
+  {
+    "name": "Polymer",
+    "description": "Adjustable brightness lamp with wireless charging base.",
+    "price": 49.99,
+    "category": "Electronics",
+    "subcategory": "Lighting",
+    "stockQuantity": 40,
+    "inStock": "Available",
+    "manufacture_date": "01-04-2025",
+    "expire_date": "01-04-2028",
+    "stock_price": 1999.6,
+    "images": [
+      {
+        "url": "/1.png",
+        "alt": "Smart LED desk lamp with charging dock"
+      }
+    ],
+    "vendor": "Vendor Name"
+  },
+  {
+    "name": "Polymer",
+    "description": "4K video output USB-C to HDMI adapter for laptops.",
+    "price": 15.99,
+    "category": "Electronics",
+    "subcategory": "Adapters",
+    "stockQuantity": 200,
+    "inStock": "Available",
+    "manufacture_date": "25-01-2025",
+    "expire_date": "25-01-2027",
+    "stock_price": 3198,
+    "images": [
+      {
+        "url": "/1.png",
+        "alt": "USB-C to HDMI metal adapter"
+      }
+    ],
+    "vendor": "Vendor Name"
+  },
+  {
+    "name": "Polymer",
+    "description": "USB webcam with built-in microphone and privacy shutter.",
+    "price": 34.99,
+    "category": "Electronics",
+    "subcategory": "Webcams",
+    "stockQuantity": 90,
+    "inStock": "Available",
+    "manufacture_date": "18-03-2025",
+    "expire_date": "18-03-2028",
+    "stock_price": 3149.1,
+    "images": [
+      {
+        "url": "/1.png",
+        "alt": "Full HD webcam with clip mount"
+      }
+    ],
+    "vendor": "Vendor Name"
+  },
+  {
+    "name": "Polymer",
+    "description": "Adjustable aluminum laptop stand for desk setup.",
+    "price": 27.99,
+    "category": "Electronics",
+    "subcategory": "Stands",
+    "stockQuantity": 70,
+    "inStock": "Available",
+    "manufacture_date": "12-02-2025",
+    "expire_date": "12-02-2028",
+    "stock_price": 1959.3,
+    "images": [
+      {
+        "url": "/1.png",
+        "alt": "Aluminum ergonomic laptop stand"
+      }
+    ],
+    "vendor": "Vendor Name"
+  },
+  {
+    "name": "Polymer",
+    "description": "Multifunctional hub with HDMI, USB 3.0, SD card slots.",
+    "price": 44.99,
+    "category": "Electronics",
+    "subcategory": "Hubs",
+    "stockQuantity": 110,
+    "inStock": "Available",
+    "manufacture_date": "08-01-2025",
+    "expire_date": "08-01-2027",
+    "stock_price": 4948.9,
+    "images": [
+      {
+        "url": "/1.png",
+        "alt": "6-in-1 USB-C hub in silver"
+      }
+    ],
+    "vendor": "Vendor Name"
+  },
+  {
+    "name": "Polymer",
+    "description": "Fast wireless charger compatible with Qi-enabled devices.",
+    "price": 19.99,
+    "category": "Electronics",
+    "subcategory": "Chargers",
+    "stockQuantity": 180,
+    "inStock": "Available",
+    "manufacture_date": "11-04-2025",
+    "expire_date": "11-04-2027",
+    "stock_price": 3598.2,
+    "images": [
+      {
+        "url": "/1.png",
+        "alt": "Black wireless charging pad"
+      }
+    ],
+    "vendor": "Vendor Name"
+  },
+  {
+    "name": "Polymer",
+    "description": "Waterproof portable Bluetooth speaker with bass boost.",
+    "price": 59.99,
+    "category": "Electronics",
+    "subcategory": "Audio",
+    "stockQuantity": 50,
+    "inStock": "Available",
+    "manufacture_date": "20-03-2025",
+    "expire_date": "20-03-2027",
+    "stock_price": 2999.5,
+    "images": [
+      {
+        "url": "/1.png",
+        "alt": "Portable Bluetooth speaker on table"
+      }
+    ],
+    "vendor": "Vendor Name"
+  },
+  {
+    "name": "Polymer",
+    "description": "App-controlled smart plug compatible with Alexa & Google.",
+    "price": 14.99,
+    "category": "Electronics",
+    "subcategory": "Smart Home",
+    "stockQuantity": 220,
+    "inStock": "Available",
+    "manufacture_date": "28-02-2025",
+    "expire_date": "28-02-2028",
+    "stock_price": 3297.8,
+    "images": [
+      {
+        "url": "/1.png",
+        "alt": "Smart Wi-Fi plug with LED indicator"
+      }
+    ],
+    "vendor": "Vendor Name"
+  },
+  {
+    "name": "Polymer",
+    "description": "High-speed external solid-state drive with USB 3.2.",
+    "price": 119.99,
+    "category": "Electronics",
+    "subcategory": "Storage",
+    "stockQuantity": 35,
+    "inStock": "Available",
+    "manufacture_date": "14-01-2025",
+    "expire_date": "14-01-2028",
+    "stock_price": 4199.65,
+    "images": [
+      {
+        "url": "/1.png",
+        "alt": "1TB portable SSD with rubber cover"
+      }
+    ],
+    "vendor": "Vendor Name"
+  }
+]
