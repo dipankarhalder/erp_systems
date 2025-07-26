@@ -4,7 +4,6 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 
-import { paths } from "../../../Constant";
 import { Button } from "../../../Shared/Button";
 import { Checkbox } from "../../../Shared/Checkbox";
 import { Logo } from "../../../Components/Common/Logo";
@@ -80,7 +79,7 @@ export const SigninPage = () => {
       title: MESSAGES.success.title,
       description: MESSAGES.success.description,
     });
-    navigate(paths.OTP);
+    navigate("otp");
   };
 
   return (
@@ -110,14 +109,14 @@ export const SigninPage = () => {
               label="Remember Me"
               {...register("remember")}
             />
-            <Link to={paths.FORGOT}>Forgot password?</Link>
+            <Link to={"forgot-password"}>Forgot password?</Link>
           </AppCheckField>
           <AppBtnField>
             <Button>Continue</Button>
           </AppBtnField>
           <AppLinkCover>
             <p>New to Pixelwix University?</p>
-            <Link to={paths.REGISTER}>Create an account</Link>
+            <Link to={"register"}>Create an account</Link>
           </AppLinkCover>
         </AppFormSignin>
       </AppInsideSignin>
