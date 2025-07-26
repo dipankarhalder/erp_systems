@@ -1,12 +1,11 @@
 import { Outlet, useLocation } from "react-router-dom";
 import { AppMainCover, AppBgSec } from "./style";
-import { paths } from "../../../Constant";
 
 const backgroundMap = {
-  [paths.LOGIN]: "/authbg.png",
-  [`/${paths.REGISTER}`]: "/createbg.png",
-  [`/${paths.OTP}`]: "/otpbg.png",
-  [`/${paths.FORGOT}`]: "/forgotbg.png",
+  ["/"]: "/authbg.png",
+  [`/register`]: "/createbg.png",
+  [`/otp`]: "/otpbg.png",
+  [`/forgot-password`]: "/forgotbg.png",
 };
 
 export const AuthLayout = () => {

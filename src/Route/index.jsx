@@ -22,7 +22,7 @@ import { LaboratoryPage } from "../Pages/Main/Laboratory";
 import { LocationsPage } from "../Pages/Main/Locations";
 import { LibraryPage } from "../Pages/Main/Library";
 import { NoticesPage } from "../Pages/Main/Notices";
-import { OtpVerificationPage } from "../Pages/Auth/OTP";
+// import { OtpVerificationPage } from "../Pages/Auth/OTP";
 import { ProfilePage } from "../Pages/Main/Profile";
 import { ProductsPage } from "../Pages/Main/Products";
 import { ReportsPage } from "../Pages/Main/Reports";
@@ -53,10 +53,10 @@ export const router = createBrowserRouter([
         path: "register",
         element: <SignupPage />,
       },
-      {
-        path: "otp",
-        element: <OtpVerificationPage />,
-      },
+      // {
+      //   path: "otp",
+      //   element: <OtpVerificationPage />,
+      // },
       {
         path: "forgot-password",
         element: <ForgotPasswordPage />,
