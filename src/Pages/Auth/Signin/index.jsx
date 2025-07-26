@@ -79,7 +79,7 @@ export const SigninPage = () => {
       title: MESSAGES.success.title,
       description: MESSAGES.success.description,
     });
-    navigate("otp");
+    navigate("/apps");
   };
 
   return (
