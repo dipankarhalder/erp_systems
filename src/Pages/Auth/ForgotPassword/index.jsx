@@ -4,9 +4,7 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 
-import { paths } from "../../../Constant";
 import { Button } from "../../../Shared/Button";
-import { Logo } from "../../../Components/Common/Logo";
 import { EmailInput } from "../../../Components/Shared/FormElements/EmailInput";
 import { ToastContext } from "../../../Shared/Toast/context/ToastContext";
 
@@ -59,7 +57,7 @@ export const ForgotPasswordPage = () => {
       description: MESSAGES.success.description,
     });
 
-    navigate(paths.LOGIN);
+    navigate("/");
   };
 
   return (
@@ -82,7 +80,7 @@ export const ForgotPasswordPage = () => {
           </AppBtnField>
           <AppLinkCover>
             <p>Back to</p>
-            <Link to={paths.LOGIN}>Sign In</Link>
+            <Link to={"/"}>Sign In</Link>
           </AppLinkCover>
         </AppFormSignin>
       </AppInsideSignin>

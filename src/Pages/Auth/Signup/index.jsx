@@ -4,7 +4,6 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 
-import { paths } from "../../../Constant";
 import { Button } from "../../../Shared/Button";
 import { Checkbox } from "../../../Shared/Checkbox";
 import { EmailInput } from "../../../Components/Shared/FormElements/EmailInput";
@@ -148,7 +147,7 @@ export const SignupPage = () => {
           </AppBtnField>
           <AppLinkCover>
             <p>Already have an account?</p>
-            <Link to={paths.LOGIN}>Sign in</Link>
+            <Link to={"/"}>Sign in</Link>
           </AppLinkCover>
         </AppFormSignin>
       </AppInsideSignin>
