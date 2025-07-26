@@ -3,38 +3,39 @@ import { TopBar } from "../../../components/Main/TopBar";
 import { locationInfo } from "../../../Constant";
 import { TableInfo } from "../../../Shared/Table";
 import { AppMainLayoutCover, AppTableDataInformation } from "../style";
-import locationData from "../../../data/location.json";
+import productData from "../../../data/products.json";
 
 const pagePaths = [
   { label: "Apps", path: "/" },
-  { label: "All Locations", path: "/" },
+  { label: "All Products", path: "/" },
 ];
 
-export const LocationsPage = () => {
-  const handleBtnAction = (action, location) => {
-    console.log(`Action: ${action}`, location);
+export const ProductsPage = () => {
+  const handleBtnAction = (action, student) => {
+    console.log(`Action: ${action}`, student);
   };
 
   const handleAddItems = (isopen) => {
     console.log(isopen);
   };
 
-  const locationTableData =
-    locationData &&
-    locationData.map((item) => ({
-      id: item.id,
-      name: item.location_name,
-      code: item.location_code,
-      owner: item.owner,
-      contact: item.contact_no,
-      status: item.status,
-      established: item.create_date,
-      address: item.location_address,
+  const productTableData =
+    productData &&
+    productData.map((item, idx) => ({
+      id: `PD${idx + 1}`,
+      name: item.name,
+      image: item.images.map((itm) => itm.url),
+      price: `Rs. ${item.price}/-`,
+      manuf_date: item.manufacture_date,
+      expire_date: item.expire_date,
+      category: item.category,
+      vendor: item.vendor,
+      description: item.description,
     }));
 
   const tableHeaders =
-    locationTableData.length > 0
-      ? Object.keys(locationTableData[0]).filter((key) => key !== "image")
+    productTableData.length > 0
+      ? Object.keys(productTableData[0]).filter((key) => key !== "image")
       : [];
 
   const [visibleColumns, setVisibleColumns] = useState(() =>
@@ -48,8 +49,7 @@ export const LocationsPage = () => {
     const handleResize = () => {
       setVisibleColumns((prev) => ({
         ...prev,
-        id: false,
-        established: false,
+        description: false,
       }));
     };
 
@@ -63,12 +63,12 @@ export const LocationsPage = () => {
       <TopBar location={locationInfo} />
       <AppTableDataInformation>
         <TableInfo
-          pageTitle={"Manage Locations"}
+          pageTitle={"Manage Products"}
           pagePath={pagePaths}
-          data={locationTableData}
-          addTextItem={"Add New Location"}
+          data={productTableData}
+          addTextItem={"Add New Product"}
           handleAddItems={handleAddItems}
-          sortableColumns={["id", "name", "code", "status"]}
+          sortableColumns={["id", "name", "status"]}
           viewBtn={"name"}
           enableStatus={true}
           filterableColumns={["status"]}

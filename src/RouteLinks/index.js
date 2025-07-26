@@ -15,9 +15,9 @@ export const sidebarLink = [
     id: 2,
     title: "Inventory Management",
     children: [
-      { id: 1, title: "Warehouse", path: paths.ADMIN, icon: SideArrow },
-      { id: 2, title: "Products", path: paths.AUTH, icon: SideArrow },
-      { id: 3, title: "Stocks", path: paths.HOSTEL, icon: SideArrow },
+      { id: 1, title: "Warehouse", path: paths.WAREHOUSE, icon: SideArrow },
+      { id: 2, title: "Products", path: paths.PRODUCTS, icon: SideArrow },
+      { id: 3, title: "Stocks", path: paths.STOCK, icon: SideArrow },
       { id: 4, title: "Vendors", path: paths.VENDORS, icon: SideArrow },
     ],
   },
