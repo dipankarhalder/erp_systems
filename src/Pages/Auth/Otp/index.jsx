@@ -4,7 +4,6 @@ import { useForm, Controller } from "react-hook-form";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 
-import { paths } from "../../../Constant";
 import { Button } from "../../../Shared/Button";
 import { Input } from "../../../Shared/Input";
 import { ToastContext } from "../../../Shared/Toast/context/ToastContext";
@@ -101,7 +100,7 @@ export const OtpVerificationPage = () => {
       title: MESSAGES.success.title,
       description: MESSAGES.success.description,
     });
-    navigate(paths.APPS);
+    navigate("/apps");
   };
 
   return (
