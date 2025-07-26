@@ -292,8 +292,8 @@ export const TableContainer = styled.div`
             cursor: not-allowed;
 
             svg path.colorSvg {
-              fill: #38d511;
-              stroke: #38d511;
+              fill: #0bae27ff;
+              stroke: #0bae27ff;
             }
           }
 

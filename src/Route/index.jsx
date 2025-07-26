@@ -25,6 +25,7 @@ import { LibraryPage } from "../Pages/Main/Library";
 import { NoticesPage } from "../Pages/Main/Notices";
 import { OtpVerificationPage } from "../Pages/Auth/OTP";
 import { ProfilePage } from "../Pages/Main/Profile";
+import { ProductsPage } from "../Pages/Main/Products";
 import { ReportsPage } from "../Pages/Main/Reports";
 import { ResultsPage } from "../Pages/Main/Results";
 import { SchedulesPage } from "../Pages/Main/Schedules";
@@ -124,7 +125,7 @@ export const router = createBrowserRouter([
         element: <LaboratoryPage />,
       },
       {
-        path: paths.LOCATIONS,
+        path: paths.WAREHOUSE,
         element: <LocationsPage />,
       },
       {
@@ -182,6 +183,10 @@ export const router = createBrowserRouter([
       {
         path: paths.VENDORS,
         element: <VendorsPage />,
+      },
+      {
+        path: paths.PRODUCTS,
+        element: <ProductsPage />,
       },
     ],
   },
