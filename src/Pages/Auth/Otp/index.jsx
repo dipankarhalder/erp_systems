@@ -7,6 +7,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { Button } from "../../../Shared/Button";
 import { Input } from "../../../Shared/Input";
 import { ToastContext } from "../../../Shared/Toast/context/ToastContext";
+import { mainPaths } from "../../../Constant";
 
 import {
   AppSignin,
@@ -100,7 +101,7 @@ export const OtpVerificationPage = () => {
       title: MESSAGES.success.title,
       description: MESSAGES.success.description,
     });
-    navigate("/apps");
+    navigate(mainPaths.APPS);
   };
 
   return (

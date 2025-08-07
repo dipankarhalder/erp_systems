@@ -10,6 +10,7 @@ import { Logo } from "../../../Components/Common/Logo";
 import { EmailInput } from "../../../Components/Shared/FormElements/EmailInput";
 import { PasswordInput } from "../../../Components/Shared/FormElements/PasswordInput";
 import { ToastContext } from "../../../Shared/Toast/context/ToastContext";
+import { mainPaths } from "../../../Constant";
 
 import {
   AppSignin,
@@ -79,7 +80,7 @@ export const SigninPage = () => {
       title: MESSAGES.success.title,
       description: MESSAGES.success.description,
     });
-    navigate("/apps");
+    navigate(mainPaths.OTP);
   };
 
   return (
@@ -109,31 +110,17 @@ export const SigninPage = () => {
               label="Remember Me"
               {...register("remember")}
             />
-            <Link to={"forgot-password"}>Forgot password?</Link>
+            <Link to={mainPaths.FORGOT}>Forgot password?</Link>
           </AppCheckField>
           <AppBtnField>
             <Button>Continue</Button>
           </AppBtnField>
           <AppLinkCover>
             <p>New to Pixelwix University?</p>
-            <Link to={"register"}>Create an account</Link>
+            <Link to={mainPaths.REGISTER}>Create an account</Link>
           </AppLinkCover>
         </AppFormSignin>
       </AppInsideSignin>
     </AppSignin>
   );
 };
-
-// for confirm password
-{
-  /* <PasswordField
-  name="confirmPassword"
-  label="Confirm Password"
-  register={register}
-  errors={errors}
-  validation={{
-    required: "Please confirm your password",
-    validate: (val) => val === getValues("password") || "Passwords do not match",
-  }}
-/> */
-}
