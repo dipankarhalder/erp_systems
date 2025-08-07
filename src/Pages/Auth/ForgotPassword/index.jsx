@@ -7,7 +7,7 @@ import * as yup from "yup";
 import { Button } from "../../../Shared/Button";
 import { EmailInput } from "../../../Components/Shared/FormElements/EmailInput";
 import { ToastContext } from "../../../Shared/Toast/context/ToastContext";
-import { mainPaths } from "../../../Constant";
+import { mainPaths } from "../../../Sconstant";
 
 import {
   AppSignin,

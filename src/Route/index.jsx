@@ -1,5 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
-import { mainPaths } from "../Constant";
+import { mainPaths } from "../Sconstant";
 
 import { Error } from "../Error";
 import { AuthLayout } from "../Pages/Layout/AuthLayout";

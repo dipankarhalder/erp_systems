@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { TopBar } from "../../../Components/Main/TopBar/index";
-import { locationInfo } from "../../../Constant";
+import { locationInfo } from "../../../Sconstant";
 import { TableInfo } from "../../../Shared/Table";
 import { AppMainLayoutCover, AppTableDataInformation } from "../style";
 import productData from "../../../data/products.json";

@@ -1,5 +1,5 @@
 import { TopBar } from "../../../Components/Main/TopBar";
-import { locationInfo } from "../../../Constant";
+import { locationInfo } from "../../../Sconstant";
 import { Calendar } from "../../../Shared/Calendar";
 import { Breadcrumb } from "../../../Shared/Breadcrumb";
 import { Rarrow } from "../../../Shared/Icons";

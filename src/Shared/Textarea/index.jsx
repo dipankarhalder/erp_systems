@@ -1,4 +1,4 @@
-import { formStatus } from "../../Constant";
+import { formStatus } from "../../Sconstant";
 import { StyledTextarea } from "./style";
 
 export const Textarea = ({

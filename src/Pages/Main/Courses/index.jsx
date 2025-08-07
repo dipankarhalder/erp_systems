@@ -1,5 +1,5 @@
 import { TopBar } from "../../../Components/Main/TopBar";
-import { locationInfo } from "../../../Constant/index";
+import { locationInfo } from "../../../Sconstant";
 import { TableCardInfo } from "../../../Shared/TableCard";
 import { AppMainLayoutCover, AppTableDataInformation } from "../style";
 import courseData from "../../../data/course.json";
