@@ -1,5 +1,5 @@
 import { TopBar } from "../../../Components/Main/TopBar";
-import { locationInfo } from "../../../Constant";
+import { locationInfo } from "../../../Constant/index";
 import { UpGraph, DownGraph } from "../../../Shared/Icons";
 import { AppMainLayoutCover, AppDeashboardSection } from "../style";
 
