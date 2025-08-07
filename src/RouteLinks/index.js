@@ -1,23 +1,24 @@
 import { SideArrow } from "../Shared/Icons";
+import { mainPaths } from "../Constant";
 
 export const sidebarLink = [
   {
     id: 1,
     title: "Main Menus",
     children: [
-      { id: 1, title: "Dashboard", path: "/apps", icon: SideArrow },
-      { id: 2, title: "Reports", path: "admission", icon: SideArrow },
-      { id: 3, title: "Analytics", path: "events", icon: SideArrow },
+      { id: 1, title: "Dashboard", path: mainPaths.APPS, icon: SideArrow },
+      { id: 2, title: "Reports", path: mainPaths.REPORT, icon: SideArrow },
+      { id: 3, title: "Analytics", path: mainPaths.EVENTS, icon: SideArrow },
     ],
   },
   {
     id: 2,
     title: "Inventory Management",
     children: [
-      { id: 1, title: "Warehouse", path: "warehouse", icon: SideArrow },
-      { id: 2, title: "Products", path: "products", icon: SideArrow },
-      { id: 3, title: "Stocks", path: "stock-store", icon: SideArrow },
-      { id: 4, title: "Vendors", path: "vendors", icon: SideArrow },
+      { id: 1, title: "Warehouse", path: mainPaths.WAREHOUSE, icon: SideArrow },
+      { id: 2, title: "Products", path: mainPaths.PRODUCTS, icon: SideArrow },
+      { id: 3, title: "Stocks", path: mainPaths.STOCK, icon: SideArrow },
+      { id: 4, title: "Vendors", path: mainPaths.VENDORS, icon: SideArrow },
     ],
   },
   {
@@ -27,26 +28,26 @@ export const sidebarLink = [
       {
         id: 1,
         title: "Bill of Materials",
-        path: "student-informations",
+        path: mainPaths.STUDENT,
         icon: SideArrow,
       },
-      { id: 2, title: "Work Orders", path: "assignments", icon: SideArrow },
+      { id: 2, title: "Work Orders", path: mainPaths.ASSIGN, icon: SideArrow },
       {
         id: 3,
         title: "Production Planning",
-        path: "scholarships",
+        path: mainPaths.SCHOLAR,
         icon: SideArrow,
       },
       {
         id: 4,
         title: "Resource Schedules",
-        path: "results",
+        path: mainPaths.RESULT,
         icon: SideArrow,
       },
       {
         id: 5,
         title: "Quality Control",
-        path: "certificates",
+        path: mainPaths.CERTIFICATE,
         icon: SideArrow,
       },
     ],
@@ -55,12 +56,12 @@ export const sidebarLink = [
     id: 4,
     title: "Finance & Accounting",
     children: [
-      { id: 1, title: "Billing", path: "teachers", icon: SideArrow },
-      { id: 2, title: "Taxes", path: "stuffs", icon: SideArrow },
+      { id: 1, title: "Billing", path: mainPaths.TEACHER, icon: SideArrow },
+      { id: 2, title: "Taxes", path: mainPaths.STUFF, icon: SideArrow },
       {
         id: 3,
         title: "Account Details",
-        path: "human-resources",
+        path: mainPaths.HUMAN,
         icon: SideArrow,
       },
     ],
@@ -72,22 +73,32 @@ export const sidebarLink = [
       {
         id: 1,
         title: "Employees",
-        path: "schedules",
+        path: mainPaths.SCHEDULE,
         icon: SideArrow,
       },
-      { id: 2, title: "Attendances", path: "assignments", icon: SideArrow },
-      { id: 3, title: "Leaves", path: "career", icon: SideArrow },
-      { id: 4, title: "Recruitments", path: "results", icon: SideArrow },
-      { id: 5, title: "Salary Info", path: "study-materials", icon: SideArrow },
-      { id: 7, title: "Performance", path: "attendance", icon: SideArrow },
+      { id: 2, title: "Attendances", path: mainPaths.ASSIGN, icon: SideArrow },
+      { id: 3, title: "Leaves", path: mainPaths.CAREER, icon: SideArrow },
+      { id: 4, title: "Recruitments", path: mainPaths.RESULT, icon: SideArrow },
+      {
+        id: 5,
+        title: "Salary Info",
+        path: mainPaths.STUDYMAT,
+        icon: SideArrow,
+      },
+      {
+        id: 7,
+        title: "Performance",
+        path: mainPaths.ATTENDANCE,
+        icon: SideArrow,
+      },
     ],
   },
   {
     id: 6,
     title: "System Management",
     children: [
-      { id: 1, title: "Settings", path: "settings", icon: SideArrow },
-      { id: 2, title: "My Profile", path: "profile", icon: SideArrow },
+      { id: 1, title: "Settings", path: mainPaths.SETTING, icon: SideArrow },
+      { id: 2, title: "My Profile", path: mainPaths.PROFILE, icon: SideArrow },
     ],
   },
 ];
