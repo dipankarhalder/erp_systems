@@ -10,7 +10,7 @@ import { Logo } from "../../../Components/Common/Logo";
 import { EmailInput } from "../../../Components/Shared/FormElements/EmailInput";
 import { PasswordInput } from "../../../Components/Shared/FormElements/PasswordInput";
 import { ToastContext } from "../../../Shared/Toast/context/ToastContext";
-import { mainPaths } from "../../../Constant";
+import { mainPaths } from "../../../Sconstant";
 
 import {
   AppSignin,

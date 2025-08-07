@@ -1,4 +1,4 @@
-import { formStatus } from "../../Constant";
+import { formStatus } from "../../Sconstant";
 import { Spinner } from "../Icons";
 import { StyledButton } from "./style";
 

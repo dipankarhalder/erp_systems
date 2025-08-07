@@ -1,5 +1,5 @@
 import { TopBar } from "../../../Components/Main/TopBar";
-import { locationInfo } from "../../../Constant/index";
+import { locationInfo } from "../../../Sconstant";
 import { AppMainLayoutCover } from "../style";
 
 const pagePaths = [

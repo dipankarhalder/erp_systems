@@ -1,5 +1,5 @@
 import { forwardRef } from "react";
-import { formStatus } from "../../Constant";
+import { formStatus } from "../../Sconstant";
 import { StyledInput } from "./style";
 
 export const Input = forwardRef(

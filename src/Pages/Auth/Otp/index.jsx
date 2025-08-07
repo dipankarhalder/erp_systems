@@ -7,7 +7,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { Button } from "../../../Shared/Button";
 import { Input } from "../../../Shared/Input";
 import { ToastContext } from "../../../Shared/Toast/context/ToastContext";
-import { mainPaths } from "../../../Constant";
+import { mainPaths } from "../../../Sconstant";
 
 import {
   AppSignin,

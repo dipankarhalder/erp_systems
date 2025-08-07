@@ -1,5 +1,5 @@
 import { SideArrow } from "../Shared/Icons";
-import { mainPaths } from "../Constant";
+import { mainPaths } from "../Sconstant";
 
 export const sidebarLink = [
   {

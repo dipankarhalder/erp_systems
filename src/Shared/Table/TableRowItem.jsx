@@ -7,7 +7,7 @@ import {
   CheckPlus,
   GreenTick,
 } from "../Icons";
-import { letterColors } from "../../Constant";
+import { letterColors } from "../../Sconstant";
 import { ActionTableButton } from "./style";
 
 export const TableRowItem = React.memo(

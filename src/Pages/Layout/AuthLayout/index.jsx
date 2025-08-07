@@ -1,5 +1,5 @@
 import { Outlet, useLocation } from "react-router-dom";
-import { mainPaths } from "../../../Constant";
+import { mainPaths } from "../../../Sconstant";
 import { AppMainCover, AppBgSec } from "./style";
 
 const backgroundMap = {

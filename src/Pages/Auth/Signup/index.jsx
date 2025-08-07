@@ -11,7 +11,7 @@ import { PasswordInput } from "../../../Components/Shared/FormElements/PasswordI
 import { TextInput } from "../../../Components/Shared/FormElements/TextInput";
 import { PhoneInput } from "../../../Components/Shared/FormElements/PhoneInput";
 import { ToastContext } from "../../../Shared/Toast/context/ToastContext";
-import { mainPaths } from "../../../Constant";
+import { mainPaths } from "../../../Sconstant";
 
 import {
   AppSignin,
