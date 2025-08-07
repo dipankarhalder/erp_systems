@@ -7,6 +7,7 @@ import * as yup from "yup";
 import { Button } from "../../../Shared/Button";
 import { EmailInput } from "../../../Components/Shared/FormElements/EmailInput";
 import { ToastContext } from "../../../Shared/Toast/context/ToastContext";
+import { mainPaths } from "../../../Constant";
 
 import {
   AppSignin,
@@ -57,7 +58,7 @@ export const ForgotPasswordPage = () => {
       description: MESSAGES.success.description,
     });
 
-    navigate("/");
+    navigate(mainPaths.LOGIN);
   };
 
   return (
@@ -80,7 +81,7 @@ export const ForgotPasswordPage = () => {
           </AppBtnField>
           <AppLinkCover>
             <p>Back to</p>
-            <Link to={"/"}>Sign In</Link>
+            <Link to={mainPaths.LOGIN}>Sign In</Link>
           </AppLinkCover>
         </AppFormSignin>
       </AppInsideSignin>
