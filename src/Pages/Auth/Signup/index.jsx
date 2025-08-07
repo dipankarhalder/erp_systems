@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
@@ -11,6 +11,7 @@ import { PasswordInput } from "../../../Components/Shared/FormElements/PasswordI
 import { TextInput } from "../../../Components/Shared/FormElements/TextInput";
 import { PhoneInput } from "../../../Components/Shared/FormElements/PhoneInput";
 import { ToastContext } from "../../../Shared/Toast/context/ToastContext";
+import { mainPaths } from "../../../Constant";
 
 import {
   AppSignin,
@@ -58,6 +59,7 @@ const signupSchema = yup.object({
 });
 
 export const SignupPage = () => {
+  const navigate = useNavigate();
   const { addToast } = useContext(ToastContext);
 
   const {
@@ -108,6 +110,7 @@ export const SignupPage = () => {
       title: MESSAGES.success.title,
       description: MESSAGES.success.description,
     });
+    navigate(mainPaths.LOGIN);
   };
 
   return (
@@ -135,8 +138,8 @@ export const SignupPage = () => {
               name="policy"
               label={
                 <>
-                  I agree to the <Link to="/terms">Terms</Link> and{" "}
-                  <Link to="/privacy">Privacy Policy</Link>.
+                  I agree to the <Link to={mainPaths.TERMS}>Terms</Link> and{" "}
+                  <Link to={mainPaths.PRIVACY}>Privacy Policy</Link>.
                 </>
               }
               {...register("policy")}
@@ -147,7 +150,7 @@ export const SignupPage = () => {
           </AppBtnField>
           <AppLinkCover>
             <p>Already have an account?</p>
-            <Link to={"/"}>Sign in</Link>
+            <Link to={mainPaths.LOGIN}>Sign in</Link>
           </AppLinkCover>
         </AppFormSignin>
       </AppInsideSignin>

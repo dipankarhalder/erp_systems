@@ -30,11 +30,13 @@ export const breakpoints = {
   lg: 1580,
 };
 
-export const paths = {
+export const mainPaths = {
   LOGIN: "/",
   REGISTER: "register",
   FORGOT: "forgot-password",
   OTP: "otp",
+  PRIVACY: "privacy",
+  TERMS: "terms",
   APPS: "/apps",
   ADMISSION: "admission",
   EVENTS: "events",
