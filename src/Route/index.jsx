@@ -1,4 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
+import { mainPaths } from "../Constant";
 
 import { Error } from "../Error";
 import { AuthLayout } from "../Pages/Layout/AuthLayout";
@@ -41,7 +42,7 @@ import { VendorsPage } from "../Pages/Main/Vendors";
 
 export const router = createBrowserRouter([
   {
-    path: "/",
+    path: mainPaths.LOGIN,
     element: <AuthLayout />,
     errorElement: <Error />,
     children: [
@@ -50,21 +51,21 @@ export const router = createBrowserRouter([
         element: <SigninPage />,
       },
       {
-        path: "register",
+        path: mainPaths.REGISTER,
         element: <SignupPage />,
       },
       {
-        path: "otp",
+        path: mainPaths.OTP,
         element: <OtpVerificationPage />,
       },
       {
-        path: "forgot-password",
+        path: mainPaths.FORGOT,
         element: <ForgotPasswordPage />,
       },
     ],
   },
   {
-    path: "/apps",
+    path: mainPaths.APPS,
     element: <MainLayout />,
     children: [
       {
@@ -72,119 +73,119 @@ export const router = createBrowserRouter([
         element: <DashboardPage />,
       },
       {
-        path: "administration",
+        path: mainPaths.ADMIN,
         element: <AdministrationPage />,
       },
       {
-        path: "admission",
+        path: mainPaths.ADMISSION,
         element: <AdmissionPage />,
       },
       {
-        path: "assignments",
+        path: mainPaths.ASSIGN,
         element: <AssignmentPage />,
       },
       {
-        path: "attendance",
+        path: mainPaths.ATTENDANCE,
         element: <AttendancePage />,
       },
       {
-        path: "authority-and-committee",
+        path: mainPaths.AUTH,
         element: <AuthorityPage />,
       },
       {
-        path: "career",
+        path: mainPaths.CAREER,
         element: <CareerPage />,
       },
       {
-        path: "certificates",
+        path: mainPaths.CERTIFICATE,
         element: <CertificatesPage />,
       },
       {
-        path: "courses",
+        path: mainPaths.COURSES,
         element: <CoursesPage />,
       },
       {
-        path: "events",
+        path: mainPaths.EVENTS,
         element: <EventsPage />,
       },
       {
-        path: "hostel",
+        path: mainPaths.HOSTEL,
         element: <HostelPage />,
       },
       {
-        path: "human-resources",
+        path: mainPaths.HUMAN,
         element: <HumanResourcesPage />,
       },
       {
-        path: "invoice",
+        path: mainPaths.INVOICE,
         element: <InvoicePage />,
       },
       {
-        path: "laboratory",
+        path: mainPaths.LABORATORY,
         element: <LaboratoryPage />,
       },
       {
-        path: "warehouse",
+        path: mainPaths.WAREHOUSE,
         element: <LocationsPage />,
       },
       {
-        path: "library",
+        path: mainPaths.LIBRARY,
         element: <LibraryPage />,
       },
       {
-        path: "notice-board",
+        path: mainPaths.NOTICE,
         element: <NoticesPage />,
       },
       {
-        path: "reports",
+        path: mainPaths.REPORT,
         element: <ReportsPage />,
       },
       {
-        path: "results",
+        path: mainPaths.RESULT,
         element: <ResultsPage />,
       },
       {
-        path: "schedules",
+        path: mainPaths.SCHEDULE,
         element: <SchedulesPage />,
       },
       {
-        path: "scholarships",
+        path: mainPaths.SCHOLAR,
         element: <ScholarshipsPage />,
       },
       {
-        path: "settings",
+        path: mainPaths.SETTING,
         element: <SettingsPage />,
       },
       {
-        path: "stock-store",
+        path: mainPaths.STOCK,
         element: <StocksPage />,
       },
       {
-        path: "student-informations",
+        path: mainPaths.STUDENT,
         element: <StudentsPage />,
       },
       {
-        path: "study-materials",
+        path: mainPaths.STUDYMAT,
         element: <StudyMaterialsPage />,
       },
       {
-        path: "stuffs",
+        path: mainPaths.STUFF,
         element: <StuffPage />,
       },
       {
-        path: "teachers",
+        path: mainPaths.TEACHER,
         element: <TeachersPage />,
       },
       {
-        path: "profile",
+        path: mainPaths.PROFILE,
         element: <ProfilePage />,
       },
       {
-        path: "vendors",
+        path: mainPaths.VENDORS,
         element: <VendorsPage />,
       },
       {
-        path: "products",
+        path: mainPaths.PRODUCTS,
         element: <ProductsPage />,
       },
     ],
