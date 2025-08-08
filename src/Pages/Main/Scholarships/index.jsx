@@ -25,7 +25,7 @@ export const ScholarshipsPage = () => {
       id: item.plan_id,
       name: item.product_name,
       center: item.work_center,
-      qty: item.planned_quantity,
+      qty: `${item.planned_quantity} items`,
       unit: item.unit_of_measure,
       start_date: item.planned_start_date,
       end_date: item.planned_end_date,
