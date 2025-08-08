@@ -7,7 +7,7 @@ import teacherData from "../../../data/teacher.json";
 
 const pagePaths = [
   { label: "Apps", path: "/" },
-  { label: "All Teachers", path: "/" },
+  { label: "All Employees", path: "/" },
 ];
 
 export const TeachersPage = () => {
@@ -26,9 +26,7 @@ export const TeachersPage = () => {
       image: item.image,
       name: item.name,
       gender: item.gender,
-      sec: item.section,
-      subject: item.subject,
-      class: item.class,
+      department: item.dept,
       status: item.mobile % 2 === 0 ? true : false,
       dob: item.DOB,
       phone: item.mobile,
@@ -52,7 +50,7 @@ export const TeachersPage = () => {
     const handleResize = () => {
       setVisibleColumns((prev) => ({
         ...prev,
-        dob: false,
+        id: false,
         address: false,
       }));
     };
@@ -67,10 +65,10 @@ export const TeachersPage = () => {
       <TopBar location={locationInfo} />
       <AppTableDataInformation>
         <TableInfo
-          pageTitle={"Manage Teachers"}
+          pageTitle={"Manage Employees"}
           pagePath={pagePaths}
           data={teacherTableData}
-          addTextItem={"Add New Teacher"}
+          addTextItem={"Add New Record"}
           handleAddItems={handleAddItems}
           sortableColumns={[
             "id",
@@ -78,11 +76,11 @@ export const TeachersPage = () => {
             "gender",
             "status",
             "phone",
-            "subject",
+            "department",
           ]}
           viewBtn={"name"}
           enableStatus={true}
-          filterableColumns={["subject", "gender", "status", "class"]}
+          filterableColumns={["department", "gender", "status"]}
           visibleColumns={visibleColumns}
           onToggleColumn={(col) =>
             setVisibleColumns((prev) => ({

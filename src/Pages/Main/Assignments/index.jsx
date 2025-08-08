@@ -25,7 +25,7 @@ export const AssignmentPage = () => {
       id: item.work_order_id,
       name: item.product_name,
       center: item.work_center,
-      qty: item.quantity,
+      qty: `${item.quantity} items`,
       unit: item.unit_of_measure,
       start_date: item.planned_start_date,
       end_date: item.planned_end_date,
