@@ -5,6 +5,17 @@ export const AppMainLayoutCover = styled.div`
   flex-direction: column;
   padding-bottom: 50px;
 
+  .app_analisys_heading {
+    display: flex;
+    width: 100%;
+
+    & > h2 {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: -24px;
+    }
+  }
+
   .app_new_half_data {
     display: flex;
     width: 100%;
