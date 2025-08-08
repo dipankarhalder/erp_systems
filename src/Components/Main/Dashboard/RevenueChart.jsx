@@ -19,7 +19,7 @@ ChartJS.register(
   Legend
 );
 
-export const RevenueChart = () => {
+export const RevenueChart = ({ heights }) => {
   const [range, setRange] = useState("month");
 
   const generateData = (range) => {
@@ -160,7 +160,7 @@ export const RevenueChart = () => {
           </button>
         </div>
       </div>
-      <Bar data={generateData(range)} options={options} height={60} />
+      <Bar data={generateData(range)} options={options} height={heights} />
     </div>
   );
 };

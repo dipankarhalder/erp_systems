@@ -1,87 +1,32 @@
-import { useEffect, useState } from "react";
 import { TopBar } from "../../../Components/Main/TopBar";
 import { locationInfo } from "../../../Sconstant";
-import { TableInfo } from "../../../Shared/Table";
 import { AppMainLayoutCover, AppTableDataInformation } from "../style";
-import eventData from "../../../data/events.json";
-
-const pagePaths = [
-  { label: "Apps", path: "/" },
-  { label: "All Events", path: "/" },
-];
+import { RevenueChart } from "../../../Components/Main/Dashboard/RevenueChart";
+import { ExpensesGrossProfitChart } from "../../../Components/Main/Dashboard/ExpensesGrossProfitChart";
+import { AccountsLineChart } from "../../../Components/Main/Dashboard/AccountsLineChart";
+import { WarehouseRevenueChart } from "../../../Components/Main/Dashboard/WarehouseRevenueChart";
+import { DepartmentLineChart } from "../../../Components/Main/Dashboard/DepartmentLineChart";
+import { GenderDoughnutChart } from "../../../Components/Main/Dashboard/GenderDoughnutChart";
+import { DepartmentRevenueDoughnut } from "../../../Components/Main/Dashboard/DepartmentRevenueDoughnut";
 
 export const EventsPage = () => {
-  const handleBtnAction = (action, location) => {
-    console.log(`Action: ${action}`, location);
-  };
-
-  const handleAddItems = (isopen) => {
-    console.log(isopen);
-  };
-
-  const eventTableData =
-    eventData &&
-    eventData.map((item) => ({
-      id: item.id,
-      name: item.name,
-      registration: item.registration_required,
-      department: item.department,
-      organizer: item.organizer,
-      location: item.location,
-      date: `${item.date} - ${item.time}`,
-      duration: item.duration,
-      audience: item.audience.map((itm) => `${itm}, `),
-    }));
-
-  const tableHeaders =
-    eventTableData.length > 0
-      ? Object.keys(eventTableData[0]).filter((key) => key !== "image")
-      : [];
-
-  const [visibleColumns, setVisibleColumns] = useState(() =>
-    tableHeaders.reduce((acc, col) => {
-      acc[col] = true;
-      return acc;
-    }, {})
-  );
-
-  useEffect(() => {
-    const handleResize = () => {
-      setVisibleColumns((prev) => ({
-        ...prev,
-        duration: false,
-        audience: false,
-      }));
-    };
-
-    handleResize();
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
   return (
     <AppMainLayoutCover>
       <TopBar location={locationInfo} />
       <AppTableDataInformation>
-        <TableInfo
-          pageTitle={"Manage Events"}
-          pagePath={pagePaths}
-          data={eventTableData}
-          addTextItem={"Add New Event"}
-          handleAddItems={handleAddItems}
-          sortableColumns={["id", "name", "code", "status"]}
-          viewBtn={"name"}
-          enableStatus={true}
-          filterableColumns={["registration", "organizer", "department"]}
-          visibleColumns={visibleColumns}
-          onToggleColumn={(col) =>
-            setVisibleColumns((prev) => ({
-              ...prev,
-              [col]: !prev[col],
-            }))
-          }
-          onAction={handleBtnAction}
-        />
+        <div className="app_new_half_data">
+          <RevenueChart heights={120} />
+          <ExpensesGrossProfitChart heights={120} />
+        </div>
+        <div className="app_new_half_data">
+          <AccountsLineChart heights={120} />
+          <WarehouseRevenueChart heights={120} />
+        </div>
+        <div className="app_new_half_data">
+          <DepartmentRevenueDoughnut />
+          <DepartmentLineChart />
+          <GenderDoughnutChart />
+        </div>
       </AppTableDataInformation>
     </AppMainLayoutCover>
   );

@@ -39,7 +39,7 @@ export const mainPaths = {
   TERMS: "terms",
   APPS: "/apps",
   ADMISSION: "admission",
-  EVENTS: "events",
+  EVENTS: "analytics",
   COURSES: "courses",
   LOCATIONS: "locations",
   ADMIN: "administration",

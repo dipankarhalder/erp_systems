@@ -19,14 +19,13 @@ ChartJS.register(
   Legend
 );
 
-export const ExpensesGrossProfitChart = () => {
+export const ExpensesGrossProfitChart = ({ heights }) => {
   const [range, setRange] = useState("month");
 
   const generateChartData = (range) => {
     const labels = [];
     const expenses = [];
     const grossProfit = [];
-
     const now = new Date();
 
     const getRandom = (min, max) =>
@@ -74,12 +73,12 @@ export const ExpensesGrossProfitChart = () => {
         {
           label: "Expenses",
           data: expenses,
-          backgroundColor: "#ff6384",
+          backgroundColor: "#c53c59ff",
         },
         {
           label: "Gross Profit",
           data: grossProfit,
-          backgroundColor: "#36a2eb",
+          backgroundColor: "#52d058ff",
         },
       ],
     };
@@ -98,10 +97,22 @@ export const ExpensesGrossProfitChart = () => {
       },
     },
     scales: {
+      x: {
+        ticks: {
+          font: {
+            family: "'AvenirNext', sans-serif",
+            weight: 500,
+          },
+        },
+      },
       y: {
         ticks: {
           callback: function (value) {
             return value >= 1000 ? `${value / 1000}k` : value;
+          },
+          font: {
+            family: "'AvenirNext', sans-serif",
+            weight: 500,
           },
         },
       },
@@ -133,7 +144,7 @@ export const ExpensesGrossProfitChart = () => {
           </button>
         </div>
       </div>
-      <Bar data={generateChartData(range)} options={options} height={60} />
+      <Bar data={generateChartData(range)} options={options} height={heights} />
     </div>
   );
 };
