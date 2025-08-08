@@ -232,9 +232,9 @@ export const DashboardPage = () => {
             </li>
           </ul>
         </div>
-        <RevenueChart />
-        <ExpensesGrossProfitChart />
-        <AccountsLineChart />
+        <RevenueChart heights={60} />
+        <ExpensesGrossProfitChart heights={60} />
+        <AccountsLineChart heights={60} />
       </AppDeashboardSection>
     </AppMainLayoutCover>
   );

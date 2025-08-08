@@ -4,6 +4,56 @@ export const AppMainLayoutCover = styled.div`
   display: flex;
   flex-direction: column;
   padding-bottom: 50px;
+
+  .app_new_half_data {
+    display: flex;
+    width: 100%;
+    gap: 14px;
+  }
+
+  .app_full_width_graph {
+    display: flex;
+    width: 100%;
+    border-radius: 8px;
+    padding: 10px 16px;
+    margin-top: 40px;
+    flex-direction: column;
+    background: ${({ theme }) => theme.colors.white};
+    border: 1px solid ${({ theme }) => theme.colors.tableborder};
+
+    .app_graph_headfing {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+
+      & > h2 {
+        font-size: 16px;
+        font-weight: 600;
+      }
+
+      .graph_btn_group {
+        display: flex;
+        gap: 6px;
+
+        button {
+          font-size: 12px;
+          font-weight: 600;
+          padding: 4px 10px 3px;
+          border-radius: 6px;
+          background: ${({ theme }) => theme.colors.tablehead};
+          border: 1px solid ${({ theme }) => theme.colors.tablehead};
+
+          &.active {
+            color: ${({ theme }) => theme.colors.btnbg};
+            background: ${({ theme }) => theme.colors.infobg};
+            border: 1px solid ${({ theme }) => theme.colors.btnbg};
+          }
+        }
+      }
+    }
+  }
 `;
 
 export const AppTableDataInformation = styled.div`
