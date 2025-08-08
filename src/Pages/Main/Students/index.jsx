@@ -3,11 +3,11 @@ import { TopBar } from "../../../Components/Main/TopBar";
 import { locationInfo } from "../../../Sconstant";
 import { TableInfo } from "../../../Shared/Table";
 import { AppMainLayoutCover, AppTableDataInformation } from "../style";
-import studentData from "../../../data/student.json";
+import bomData from "../../../data/bom.json";
 
 const pagePaths = [
   { label: "Apps", path: "/" },
-  { label: "All Students", path: "/" },
+  { label: "All Bills", path: "/" },
 ];
 
 export const StudentsPage = () => {
@@ -19,26 +19,31 @@ export const StudentsPage = () => {
     console.log(isopen);
   };
 
-  const studentTableData =
-    studentData &&
-    studentData.map((item) => ({
-      id: item.id,
-      name: item.name,
-      image: item.image,
-      sec: item.section,
-      status: item.mobile % 2 === 0 ? true : false,
-      dob: item.dob,
-      phone: item.mobile,
-      email: item.email,
-      gender: item.gender,
-      department: item.department,
-      parent_name: item.parent_name,
-      address: item.address,
-    }));
+  const bomTableData =
+    bomData &&
+    bomData.map((item) => {
+      const componentString = item.components
+        .map((itm) => `${itm.name} - ${itm.quantity} ${itm.unit_of_measure}`)
+        .join(", ");
+
+      return {
+        id: item.bom_id,
+        name: item.product.name,
+        effective: item.product.effective_date,
+        components:
+          componentString.length > 50
+            ? componentString.slice(0, 50) + "..."
+            : componentString,
+        rev: item.product.revision,
+        unit: item.product.unit_of_measure,
+        created_by: item.metadata.created_by,
+        status: item.metadata.status,
+      };
+    });
 
   const tableHeaders =
-    studentTableData.length > 0
-      ? Object.keys(studentTableData[0]).filter((key) => key !== "image")
+    bomTableData.length > 0
+      ? Object.keys(bomTableData[0]).filter((key) => key !== "image")
       : [];
 
   const [visibleColumns, setVisibleColumns] = useState(() =>
@@ -52,9 +57,7 @@ export const StudentsPage = () => {
     const handleResize = () => {
       setVisibleColumns((prev) => ({
         ...prev,
-        dob: false,
-        parent_name: false,
-        address: false,
+        id: false,
       }));
     };
 
@@ -68,22 +71,22 @@ export const StudentsPage = () => {
       <TopBar location={locationInfo} />
       <AppTableDataInformation>
         <TableInfo
-          pageTitle={"Manage Students"}
+          pageTitle={"Manage Material Bills"}
           pagePath={pagePaths}
-          data={studentTableData}
-          addTextItem={"Add New Student"}
+          data={bomTableData}
+          addTextItem={"Add New Record"}
           handleAddItems={handleAddItems}
           sortableColumns={[
             "id",
             "name",
-            "gender",
-            "department",
-            "dob",
+            "rev",
+            "unit",
+            "created_by",
             "status",
           ]}
           viewBtn={"name"}
           enableStatus={true}
-          filterableColumns={["gender", "department", "status", "sec"]}
+          filterableColumns={["rev", "unit", "status"]}
           visibleColumns={visibleColumns}
           onToggleColumn={(col) =>
             setVisibleColumns((prev) => ({

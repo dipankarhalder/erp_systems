@@ -48,7 +48,7 @@ export const VendorsPage = () => {
     const handleResize = () => {
       setVisibleColumns((prev) => ({
         ...prev,
-        address: false,
+        id: false,
       }));
     };
 
@@ -65,7 +65,7 @@ export const VendorsPage = () => {
           pageTitle={"Manage Vendors"}
           pagePath={pagePaths}
           data={vendorTableData}
-          addTextItem={"Add New Vendor"}
+          addTextItem={"Add New Record"}
           handleAddItems={handleAddItems}
           sortableColumns={["id", "name", "status"]}
           viewBtn={"name"}
