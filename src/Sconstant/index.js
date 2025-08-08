@@ -58,7 +58,7 @@ export const mainPaths = {
   INVOICE: "invoice",
   CAREER: "career",
   STUDENT: "materials-bill",
-  ASSIGN: "assignments",
+  ASSIGN: "work-order",
   SCHOLAR: "scholarships",
   RESULT: "results",
   CERTIFICATE: "certificates",
