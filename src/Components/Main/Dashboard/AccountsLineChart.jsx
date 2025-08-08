@@ -21,7 +21,7 @@ ChartJS.register(
   Legend
 );
 
-export const AccountsLineChart = () => {
+export const AccountsLineChart = ({ heights }) => {
   const [range, setRange] = useState("month");
 
   const generateData = (range) => {
@@ -114,13 +114,29 @@ export const AccountsLineChart = () => {
         callbacks: {
           label: (context) => `₹${context.raw.toLocaleString()}`,
         },
+        font: {
+          family: "'AvenirNext', sans-serif",
+          weight: 500,
+        },
       },
     },
     scales: {
+      x: {
+        ticks: {
+          font: {
+            family: "'AvenirNext', sans-serif",
+            weight: 500,
+          },
+        },
+      },
       y: {
         ticks: {
           callback: function (value) {
             return value >= 1000 ? value / 1000 + "k" : value;
+          },
+          font: {
+            family: "'AvenirNext', sans-serif",
+            weight: 500,
           },
         },
       },
@@ -152,7 +168,7 @@ export const AccountsLineChart = () => {
           </button>
         </div>
       </div>
-      <Line data={generateData(range)} options={options} height={60} />
+      <Line data={generateData(range)} options={options} height={heights} />
     </div>
   );
 };
