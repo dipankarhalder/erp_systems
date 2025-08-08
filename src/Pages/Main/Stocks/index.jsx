@@ -47,6 +47,7 @@ export const StocksPage = () => {
     const handleResize = () => {
       setVisibleColumns((prev) => ({
         ...prev,
+        id: false,
         stock: false,
       }));
     };
@@ -64,12 +65,18 @@ export const StocksPage = () => {
           pageTitle={"Manage Stocks"}
           pagePath={pagePaths}
           data={productTableData}
-          addTextItem={"Add New Stock"}
+          addTextItem={"Add New Record"}
           handleAddItems={handleAddItems}
-          sortableColumns={["id", "name", "vendor"]}
+          sortableColumns={[
+            "id",
+            "name",
+            "stock_quantity",
+            "stock_price",
+            "vendor",
+          ]}
           viewBtn={"name"}
           enableStatus={true}
-          filterableColumns={["expire_date", "vendor"]}
+          filterableColumns={["name"]}
           visibleColumns={visibleColumns}
           onToggleColumn={(col) =>
             setVisibleColumns((prev) => ({

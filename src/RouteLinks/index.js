@@ -7,8 +7,8 @@ export const sidebarLink = [
     title: "Main Menus",
     children: [
       { id: 1, title: "Dashboard", path: mainPaths.APPS, icon: SideArrow },
-      { id: 2, title: "Reports", path: mainPaths.REPORT, icon: SideArrow },
       { id: 3, title: "Analytics", path: mainPaths.EVENTS, icon: SideArrow },
+      { id: 2, title: "Reports", path: mainPaths.REPORT, icon: SideArrow },
     ],
   },
   {

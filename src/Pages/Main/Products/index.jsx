@@ -24,6 +24,7 @@ export const ProductsPage = () => {
     productData.map((item, idx) => ({
       id: `PD${idx + 1}`,
       name: item.name,
+      sku: item.sku,
       image: item.images.map((itm) => itm.url),
       price: `Rs. ${item.price}/-`,
       manuf_date: item.manufacture_date,
@@ -49,6 +50,7 @@ export const ProductsPage = () => {
     const handleResize = () => {
       setVisibleColumns((prev) => ({
         ...prev,
+        id: false,
         description: false,
       }));
     };
@@ -66,12 +68,12 @@ export const ProductsPage = () => {
           pageTitle={"Manage Products"}
           pagePath={pagePaths}
           data={productTableData}
-          addTextItem={"Add New Product"}
+          addTextItem={"Add New Record"}
           handleAddItems={handleAddItems}
-          sortableColumns={["id", "name", "status"]}
+          sortableColumns={["id", "name", "category", "vendor"]}
           viewBtn={"name"}
           enableStatus={true}
-          filterableColumns={["status"]}
+          filterableColumns={["category", "vendor"]}
           visibleColumns={visibleColumns}
           onToggleColumn={(col) =>
             setVisibleColumns((prev) => ({

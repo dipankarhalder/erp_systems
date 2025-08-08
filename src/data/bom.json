@@ -1,0 +1,218 @@
+[
+  {
+    "bom_id": "BOM-1001",
+    "product": {
+      "product_id": "PROD-001",
+      "name": "Wooden Table",
+      "description": "4-seater wooden dining table",
+      "unit_of_measure": "each",
+      "revision": "A",
+      "effective_date": "2025-01-01"
+    },
+    "components": [
+      {
+        "item_id": "COMP-101",
+        "name": "Wooden Plank",
+        "quantity": 4,
+        "unit_of_measure": "pieces"
+      },
+      {
+        "item_id": "COMP-102",
+        "name": "Nails",
+        "quantity": 50,
+        "unit_of_measure": "pieces"
+      },
+      {
+        "item_id": "COMP-103",
+        "name": "Wood Glue",
+        "quantity": 0.5,
+        "unit_of_measure": "liters"
+      },
+      {
+        "item_id": "COMP-104",
+        "name": "Varnish",
+        "quantity": 0.2,
+        "unit_of_measure": "liters"
+      }
+    ],
+    "metadata": {
+      "created_by": "engineering_user_01",
+      "created_at": "2025-08-01T10:30:00Z",
+      "status": true
+    }
+  },
+  {
+    "bom_id": "BOM-1002",
+    "product": {
+      "product_id": "PROD-002",
+      "name": "Office Chair",
+      "description": "Adjustable ergonomic office chair",
+      "unit_of_measure": "each",
+      "revision": "B",
+      "effective_date": "2025-02-15"
+    },
+    "components": [
+      {
+        "item_id": "COMP-201",
+        "name": "Chair Frame",
+        "quantity": 1,
+        "unit_of_measure": "pieces"
+      },
+      {
+        "item_id": "COMP-202",
+        "name": "Cushion Foam",
+        "quantity": 2,
+        "unit_of_measure": "pieces"
+      },
+      {
+        "item_id": "COMP-203",
+        "name": "Wheels",
+        "quantity": 5,
+        "unit_of_measure": "pieces"
+      },
+      {
+        "item_id": "COMP-204",
+        "name": "Hydraulic Cylinder",
+        "quantity": 1,
+        "unit_of_measure": "pieces"
+      }
+    ],
+    "metadata": {
+      "created_by": "engineering_user_02",
+      "created_at": "2025-08-02T09:00:00Z",
+      "status": true
+    }
+  },
+  {
+    "bom_id": "BOM-1003",
+    "product": {
+      "product_id": "PROD-003",
+      "name": "Bookshelf",
+      "description": "5-tier wooden bookshelf",
+      "unit_of_measure": "each",
+      "revision": "A",
+      "effective_date": "2025-03-10"
+    },
+    "components": [
+      {
+        "item_id": "COMP-301",
+        "name": "Shelf Plank",
+        "quantity": 6,
+        "unit_of_measure": "pieces"
+      },
+      {
+        "item_id": "COMP-302",
+        "name": "Screws",
+        "quantity": 40,
+        "unit_of_measure": "pieces"
+      },
+      {
+        "item_id": "COMP-303",
+        "name": "Wood Stain",
+        "quantity": 0.3,
+        "unit_of_measure": "liters"
+      }
+    ],
+    "metadata": {
+      "created_by": "engineering_user_01",
+      "created_at": "2025-08-03T14:20:00Z",
+      "status": false
+    }
+  },
+  {
+    "bom_id": "BOM-1004",
+    "product": {
+      "product_id": "PROD-004",
+      "name": "LED Desk Lamp",
+      "description": "Rechargeable LED desk lamp with dimmer",
+      "unit_of_measure": "each",
+      "revision": "C",
+      "effective_date": "2025-04-05"
+    },
+    "components": [
+      {
+        "item_id": "COMP-401",
+        "name": "LED Strip",
+        "quantity": 1,
+        "unit_of_measure": "pieces"
+      },
+      {
+        "item_id": "COMP-402",
+        "name": "Plastic Housing",
+        "quantity": 1,
+        "unit_of_measure": "pieces"
+      },
+      {
+        "item_id": "COMP-403",
+        "name": "Rechargeable Battery",
+        "quantity": 1,
+        "unit_of_measure": "pieces"
+      },
+      {
+        "item_id": "COMP-404",
+        "name": "Dimmer Circuit",
+        "quantity": 1,
+        "unit_of_measure": "pieces"
+      },
+      {
+        "item_id": "COMP-405",
+        "name": "USB Charging Port",
+        "quantity": 1,
+        "unit_of_measure": "pieces"
+      }
+    ],
+    "metadata": {
+      "created_by": "engineering_user_03",
+      "created_at": "2025-08-04T11:45:00Z",
+      "status": true
+    }
+  },
+  {
+    "bom_id": "BOM-1005",
+    "product": {
+      "product_id": "PROD-005",
+      "name": "Smart Thermostat",
+      "description": "Wi-Fi-enabled smart home thermostat",
+      "unit_of_measure": "each",
+      "revision": "D",
+      "effective_date": "2025-05-01"
+    },
+    "components": [
+      {
+        "item_id": "COMP-501",
+        "name": "LCD Display",
+        "quantity": 1,
+        "unit_of_measure": "pieces"
+      },
+      {
+        "item_id": "COMP-502",
+        "name": "Temperature Sensor",
+        "quantity": 1,
+        "unit_of_measure": "pieces"
+      },
+      {
+        "item_id": "COMP-503",
+        "name": "Wi-Fi Module",
+        "quantity": 1,
+        "unit_of_measure": "pieces"
+      },
+      {
+        "item_id": "COMP-504",
+        "name": "Microcontroller",
+        "quantity": 1,
+        "unit_of_measure": "pieces"
+      },
+      {
+        "item_id": "COMP-505",
+        "name": "Plastic Enclosure",
+        "quantity": 1,
+        "unit_of_measure": "pieces"
+      }
+    ],
+    "metadata": {
+      "created_by": "engineering_user_02",
+      "created_at": "2025-08-05T08:15:00Z",
+      "status": false
+    }
+  }
+]
