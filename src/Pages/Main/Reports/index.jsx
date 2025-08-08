@@ -62,7 +62,7 @@ export const ReportsPage = () => {
       <TopBar location={locationInfo} />
       <AppTableDataInformation>
         <TableInfo
-          pageTitle={"Manage Locations"}
+          pageTitle={"Manage Reports"}
           pagePath={pagePaths}
           data={reportTableData}
           addTextItem={"Add New Record"}

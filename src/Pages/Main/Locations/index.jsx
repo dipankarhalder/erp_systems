@@ -7,7 +7,7 @@ import locationData from "../../../data/location.json";
 
 const pagePaths = [
   { label: "Apps", path: "/" },
-  { label: "All Locations", path: "/" },
+  { label: "All Warehouse", path: "/" },
 ];
 
 export const LocationsPage = () => {
@@ -23,7 +23,7 @@ export const LocationsPage = () => {
     locationData &&
     locationData.map((item) => ({
       id: item.id,
-      name: item.location_name,
+      name: item.warehouse_name,
       code: item.location_code,
       owner: item.owner,
       contact: item.contact_no,
@@ -63,10 +63,10 @@ export const LocationsPage = () => {
       <TopBar location={locationInfo} />
       <AppTableDataInformation>
         <TableInfo
-          pageTitle={"Manage Locations"}
+          pageTitle={"Manage Warehouse"}
           pagePath={pagePaths}
           data={locationTableData}
-          addTextItem={"Add New Location"}
+          addTextItem={"Add New Record"}
           handleAddItems={handleAddItems}
           sortableColumns={["id", "name", "code", "status"]}
           viewBtn={"name"}
