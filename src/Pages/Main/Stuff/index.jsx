@@ -3,11 +3,11 @@ import { TopBar } from "../../../Components/Main/TopBar";
 import { locationInfo } from "../../../Sconstant";
 import { TableInfo } from "../../../Shared/Table";
 import { AppMainLayoutCover, AppTableDataInformation } from "../style";
-import stuffData from "../../../data/stuff.json";
+import taxData from "../../../data/tax.json";
 
 const pagePaths = [
   { label: "Apps", path: "/" },
-  { label: "All Stuffs", path: "/" },
+  { label: "All Taxes", path: "/" },
 ];
 
 export const StuffPage = () => {
@@ -19,24 +19,21 @@ export const StuffPage = () => {
     console.log(isopen);
   };
 
-  const stuffTableData =
-    stuffData &&
-    stuffData.map((item) => ({
-      id: item.id,
-      image: item.image,
-      name: item.name,
-      gender: item.gender,
-      mobile: item.mobile,
-      DOB: item.DOB,
-      designation: item.designation,
-      blood_group: item.blood_group,
-      college_name: item.college_name,
-      address: item.address,
+  const taxTableData =
+    taxData &&
+    taxData.map((item) => ({
+      id: item.tax_id,
+      name: item.tax_name,
+      type: item.tax_type,
+      rate: item.rate,
+      applicable_on: item.applicable_on,
+      status_info: item.status,
+      created_by: item.created_by,
     }));
 
   const tableHeaders =
-    stuffTableData.length > 0
-      ? Object.keys(stuffTableData[0]).filter((key) => key !== "image")
+    taxTableData.length > 0
+      ? Object.keys(taxTableData[0]).filter((key) => key !== "image")
       : [];
 
   const [visibleColumns, setVisibleColumns] = useState(() =>
@@ -65,15 +62,15 @@ export const StuffPage = () => {
       <TopBar location={locationInfo} />
       <AppTableDataInformation>
         <TableInfo
-          pageTitle={"Manage Stuffs"}
+          pageTitle={"Manage Taxes"}
           pagePath={pagePaths}
-          data={stuffTableData}
+          data={taxTableData}
           addTextItem={"Add New Stuff"}
           handleAddItems={handleAddItems}
-          sortableColumns={["id", "name", "code", "gender"]}
+          sortableColumns={["id", "name", "type", "rate", "status_info"]}
           viewBtn={"name"}
           enableStatus={true}
-          filterableColumns={["gender", "designation", "college_name"]}
+          filterableColumns={["type", "status_info"]}
           visibleColumns={visibleColumns}
           onToggleColumn={(col) =>
             setVisibleColumns((prev) => ({

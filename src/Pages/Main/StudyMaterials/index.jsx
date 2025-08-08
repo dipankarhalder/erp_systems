@@ -28,8 +28,8 @@ export const StudyMaterialsPage = () => {
       department: item.department,
       basic_salary: `Rs. ${item.basic_salary}/-`,
       tax: `Rs. ${item.deductions.tax}/-`,
-      net_salary: `Rs. ${item.net_salary}/-`,
       pf: `Rs. ${item.deductions.pf}/-`,
+      net_salary: `Rs. ${item.net_salary}/-`,
     }));
 
   const tableHeaders =
