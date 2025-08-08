@@ -56,7 +56,7 @@ export const sidebarLink = [
     id: 4,
     title: "Finance & Accounting",
     children: [
-      { id: 1, title: "Billing", path: mainPaths.TEACHER, icon: SideArrow },
+      { id: 1, title: "Billing", path: mainPaths.CAREER, icon: SideArrow },
       { id: 2, title: "Taxes", path: mainPaths.STUFF, icon: SideArrow },
       {
         id: 3,
@@ -73,12 +73,17 @@ export const sidebarLink = [
       {
         id: 1,
         title: "Employees",
+        path: mainPaths.TEACHER,
+        icon: SideArrow,
+      },
+      {
+        id: 2,
+        title: "Attendances",
         path: mainPaths.SCHEDULE,
         icon: SideArrow,
       },
-      { id: 2, title: "Attendances", path: mainPaths.ASSIGN, icon: SideArrow },
-      { id: 3, title: "Leaves", path: mainPaths.CAREER, icon: SideArrow },
-      { id: 4, title: "Recruitments", path: mainPaths.RESULT, icon: SideArrow },
+      // { id: 3, title: "Leaves", path: mainPaths.CAREER, icon: SideArrow },
+      // { id: 4, title: "Recruitments", path: "/", icon: SideArrow },
       {
         id: 5,
         title: "Salary Info",
