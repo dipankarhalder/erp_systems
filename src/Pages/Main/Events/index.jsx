@@ -14,6 +14,9 @@ export const EventsPage = () => {
     <AppMainLayoutCover>
       <TopBar location={locationInfo} />
       <AppTableDataInformation>
+        <div className="app_analisys_heading">
+          <h2>All Analysis Informations</h2>
+        </div>
         <div className="app_new_half_data">
           <RevenueChart heights={120} />
           <ExpensesGrossProfitChart heights={120} />
