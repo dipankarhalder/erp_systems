@@ -23,7 +23,7 @@ export const StudentsPage = () => {
     bomData &&
     bomData.map((item) => {
       const componentString = item.components
-        .map((itm) => `${itm.name} - ${itm.quantity} ${itm.unit_of_measure}`)
+        .map((itm) => `${itm.name}`)
         .join(", ");
 
       return {
@@ -36,8 +36,8 @@ export const StudentsPage = () => {
             : componentString,
         rev: item.product.revision,
         unit: item.product.unit_of_measure,
-        created_by: item.metadata.created_by,
         status: item.metadata.status,
+        created_by: item.metadata.created_by,
       };
     });
 
@@ -58,6 +58,7 @@ export const StudentsPage = () => {
       setVisibleColumns((prev) => ({
         ...prev,
         id: false,
+        unit: false,
       }));
     };
 

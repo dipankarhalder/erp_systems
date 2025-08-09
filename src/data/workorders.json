@@ -2,7 +2,7 @@
   {
     "work_order_id": "WO-0001",
     "product_id": "PROD-001",
-    "product_name": "Wooden Table",
+    "product_name": "Polycarbonate Sheet Clear 4x8 f",
     "quantity": 10,
     "unit_of_measure": "each",
     "status": true,
@@ -17,7 +17,7 @@
   {
     "work_order_id": "WO-0002",
     "product_id": "PROD-002",
-    "product_name": "Office Chair",
+    "product_name": "PVC Foam Sheet White 5mm",
     "quantity": 25,
     "unit_of_measure": "each",
     "status": false,
@@ -32,7 +32,7 @@
   {
     "work_order_id": "WO-0003",
     "product_id": "PROD-003",
-    "product_name": "Bookshelf",
+    "product_name": "Acrylic Sheet Transparent 3mm",
     "quantity": 15,
     "unit_of_measure": "each",
     "status": true,
@@ -47,7 +47,7 @@
   {
     "work_order_id": "WO-0004",
     "product_id": "PROD-004",
-    "product_name": "LED Desk Lamp",
+    "product_name": "HDPE Sheet Black 10mm",
     "quantity": 40,
     "unit_of_measure": "each",
     "status": true,
@@ -62,7 +62,7 @@
   {
     "work_order_id": "WO-0005",
     "product_id": "PROD-005",
-    "product_name": "Smart Thermostat",
+    "product_name": "Polypropylene Sheet Natural 6mm",
     "quantity": 30,
     "unit_of_measure": "each",
     "status": false,
@@ -77,7 +77,7 @@
   {
     "work_order_id": "WO-0006",
     "product_id": "PROD-001",
-    "product_name": "Wooden Table",
+    "product_name": "ABS Sheet Grey 4x4 ft",
     "quantity": 5,
     "unit_of_measure": "each",
     "status": true,
@@ -92,7 +92,7 @@
   {
     "work_order_id": "WO-0007",
     "product_id": "PROD-002",
-    "product_name": "Office Chair",
+    "product_name": "PETG Sheet Transparent 2mm",
     "quantity": 10,
     "unit_of_measure": "each",
     "status": true,
@@ -107,7 +107,7 @@
   {
     "work_order_id": "WO-0008",
     "product_id": "PROD-003",
-    "product_name": "Bookshelf",
+    "product_name": "Teflon PTFE Sheet White 1mm",
     "quantity": 20,
     "unit_of_measure": "each",
     "status": false,
@@ -122,7 +122,7 @@
   {
     "work_order_id": "WO-0009",
     "product_id": "PROD-004",
-    "product_name": "LED Desk Lamp",
+    "product_name": "Polycarbonate Sheet Bronze 6mm",
     "quantity": 60,
     "unit_of_measure": "each",
     "status": true,
@@ -137,7 +137,7 @@
   {
     "work_order_id": "WO-0010",
     "product_id": "PROD-005",
-    "product_name": "Smart Thermostat",
+    "product_name": "Acrylic Mirror Sheet Silver 3mm",
     "quantity": 50,
     "unit_of_measure": "each",
     "status": true,
@@ -152,7 +152,7 @@
   {
     "work_order_id": "WO-0011",
     "product_id": "PROD-001",
-    "product_name": "Wooden Table",
+    "product_name": "PVC Rigid Sheet Grey 2mm",
     "quantity": 12,
     "unit_of_measure": "each",
     "status": false,
@@ -167,7 +167,7 @@
   {
     "work_order_id": "WO-0012",
     "product_id": "PROD-002",
-    "product_name": "Office Chair",
+    "product_name": "HDPE Sheet White 12mm",
     "quantity": 18,
     "unit_of_measure": "each",
     "status": true,
@@ -182,7 +182,7 @@
   {
     "work_order_id": "WO-0013",
     "product_id": "PROD-003",
-    "product_name": "Bookshelf",
+    "product_name": "HDPE Sheet White 12mm",
     "quantity": 8,
     "unit_of_measure": "each",
     "status": true,
@@ -197,7 +197,7 @@
   {
     "work_order_id": "WO-0014",
     "product_id": "PROD-004",
-    "product_name": "LED Desk Lamp",
+    "product_name": "Acrylic Mirror Sheet Silver 3mm",
     "quantity": 35,
     "unit_of_measure": "each",
     "status": false,
@@ -212,7 +212,7 @@
   {
     "work_order_id": "WO-0015",
     "product_id": "PROD-005",
-    "product_name": "Smart Thermostat",
+    "product_name": "PVC Rigid Sheet Grey 2mm",
     "quantity": 45,
     "unit_of_measure": "each",
     "status": true,

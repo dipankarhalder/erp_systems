@@ -26,7 +26,8 @@ export const ProductsPage = () => {
       name: item.name,
       sku: item.sku,
       image: item.images.map((itm) => itm.url),
-      price: `Rs. ${item.price}/-`,
+      price: `Rs. ${item.stock_price}/-`,
+      stock_price: `Rs. ${item.price}/-`,
       manuf_date: item.manufacture_date,
       expire_date: item.expire_date,
       category: item.category,
@@ -51,6 +52,7 @@ export const ProductsPage = () => {
       setVisibleColumns((prev) => ({
         ...prev,
         id: false,
+        category: false,
         description: false,
       }));
     };
