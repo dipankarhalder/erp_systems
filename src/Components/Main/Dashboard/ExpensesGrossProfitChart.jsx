@@ -73,12 +73,12 @@ export const ExpensesGrossProfitChart = ({ heights }) => {
         {
           label: "Expenses",
           data: expenses,
-          backgroundColor: "#c53c59ff",
+          backgroundColor: "rgba(255, 99, 132, 1)",
         },
         {
           label: "Gross Profit",
           data: grossProfit,
-          backgroundColor: "#52d058ff",
+          backgroundColor: "rgba(21, 219, 143, 1)",
         },
       ],
     };

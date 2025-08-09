@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Line } from "react-chartjs-2";
 import {
   Chart as ChartJS,
@@ -75,13 +75,12 @@ export const AccountsLineChart = ({ heights }) => {
         {
           label: "Receivable",
           data: receivable,
-          backgroundColor: "rgba(76, 175, 80, 0.2)",
+          backgroundColor: "rgba(54, 162, 235, 1)",
           fill: true,
-          borderColor: "rgba(21, 135, 36, 1)",
+          borderColor: "rgba(54, 162, 235, 1)",
           borderWidth: 2,
-          tension: 0.4,
           pointBackgroundColor: "white",
-          pointBorderColor: "rgba(21, 135, 36, 1)",
+          pointBorderColor: "rgba(54, 162, 235, 1)",
           pointRadius: 4,
           pointBorderWidth: 2,
           pointHoverRadius: 4,
@@ -90,8 +89,7 @@ export const AccountsLineChart = ({ heights }) => {
           label: "Payable",
           data: payable,
           borderColor: "#f44336",
-          backgroundColor: "rgba(244, 67, 54, 0.2)",
-          tension: 0.4,
+          backgroundColor: "#f44336",
           fill: true,
           borderWidth: 2,
           pointBackgroundColor: "white",
