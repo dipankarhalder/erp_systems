@@ -6,6 +6,8 @@ export const theme = {
     transparent: "transparent",
     white: "#ffffff",
     black: "#000000",
+    ylow: "#ea9400ff",
+    ylowbg: "#ffeed1ff",
     warning: "#be6e05ff",
     warningbg: "#fef3dd",
     success: "#037722",

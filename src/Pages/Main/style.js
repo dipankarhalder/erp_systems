@@ -133,6 +133,18 @@ export const AppDeashboardSection = styled.div`
     }
   }
 
+  .app_more_link {
+    display: flex;
+    width: 100%;
+    margin-top: 30px;
+    justify-content: center;
+
+    & > a {
+      text-decoration: underline;
+      color: ${({ theme }) => theme.colors.blue};
+    }
+  }
+
   .app_list_overview_items {
     display: flex;
     width: 100%;
@@ -142,7 +154,7 @@ export const AppDeashboardSection = styled.div`
     .app_list_info {
       width: 20%;
       border-radius: 8px;
-      padding: 12px 18px;
+      padding: 11px 13px 9px 13px;
       flex-direction: column;
       background: ${({ theme }) => theme.colors.white};
       border: 1px solid ${({ theme }) => theme.colors.tableborder};
@@ -165,7 +177,7 @@ export const AppDeashboardSection = styled.div`
           }
 
           & > p {
-            font-size: 16px;
+            font-size: 17px;
             font-weight: 700;
           }
         }
@@ -198,6 +210,11 @@ export const AppDeashboardSection = styled.div`
           &.sale {
             color: ${({ theme }) => theme.colors.error};
             background: ${({ theme }) => theme.colors.errorbg};
+          }
+
+          &.materials {
+            color: ${({ theme }) => theme.colors.ylow};
+            background: ${({ theme }) => theme.colors.ylowbg};
           }
 
           &.loans {
@@ -288,7 +305,7 @@ export const AppDeashboardSection = styled.div`
       content: "";
       position: absolute;
       top: 0px;
-      width: 70px;
+      width: 10px;
       height: 100%;
       background: #ffffff;
     }
@@ -324,8 +341,8 @@ export const AppDeashboardSection = styled.div`
       & > li {
         display: flex;
         width: auto;
-        border-radius: 8px;
-        padding: 10px 16px;
+        border-radius: 6px;
+        padding: 6px 10px 6px 8px;
         align-items: center;
         transition: 0.5s;
         cursor: pointer;
@@ -336,25 +353,33 @@ export const AppDeashboardSection = styled.div`
         .front_item {
           display: flex;
           align-items: center;
-          gap: 14px;
+          gap: 10px;
 
           & > span {
-            width: 24px;
-            height: 24px;
+            width: 26px;
+            height: 26px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
 
             & > svg {
-              width: 24px;
-              height: 24px;
+              width: 15px;
+              height: 15px;
+            }
+
+            &:first-child {
+              background: ${({ theme }) => theme.colors.tableborder};
             }
 
             &:last-child {
-              margin-left: 26px;
-              width: 14px;
-              height: 14px;
+              margin-left: 16px;
+              width: 12px;
+              height: 12px;
 
               & > svg {
-                width: 14px;
-                height: 14px;
+                width: 12px;
+                height: 12px;
               }
             }
           }

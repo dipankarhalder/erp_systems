@@ -25,7 +25,6 @@ export const RevenueChart = ({ heights }) => {
   const generateData = (range) => {
     const labels = [];
     const data = [];
-
     const now = new Date();
 
     if (range === "month") {
@@ -77,8 +76,8 @@ export const RevenueChart = ({ heights }) => {
         {
           label: "Total Revenue",
           data,
-          borderColor: "#113693",
-          backgroundColor: "#113693",
+          borderColor: "rgba(54, 162, 235, 1)",
+          backgroundColor: "rgba(54, 162, 235, 1)",
           fill: true,
         },
       ],

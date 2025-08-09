@@ -1,5 +1,5 @@
 import { TopBar } from "../../../Components/Main/TopBar";
-import { locationInfo } from "../../../Sconstant";
+import { locationInfo, mainPaths } from "../../../Sconstant";
 import {
   Companies,
   Subscribers,
@@ -14,8 +14,10 @@ import {
   Settings,
   Teams,
   Profile,
+  TypeSample,
   Members,
   Rarrow,
+  Billings,
   Plans,
   Stocks,
 } from "../../../Shared/Icons";
@@ -23,6 +25,7 @@ import { AppMainLayoutCover, AppDeashboardSection } from "../style";
 import { RevenueChart } from "../../../Components/Main/Dashboard/RevenueChart";
 import { ExpensesGrossProfitChart } from "../../../Components/Main/Dashboard/ExpensesGrossProfitChart";
 import { AccountsLineChart } from "../../../Components/Main/Dashboard/AccountsLineChart";
+import { Link } from "react-router-dom";
 
 const pagePaths = [{ label: "..Apps", path: "/" }];
 
@@ -45,7 +48,7 @@ export const DashboardPage = () => {
             <div className="app_list_row">
               <div className="app_list_heading">
                 <h3>Total Revenue</h3>
-                <p>Rs. 528976/-</p>
+                <p>Rs. 12.46 Cr</p>
               </div>
               <div className="app_list_icons revenue">
                 <Revenue />
@@ -57,11 +60,8 @@ export const DashboardPage = () => {
                   <Uanalysis />
                   <p>6.9%</p>
                 </li>
-                <li className="app_week">
-                  <p>This week</p>
-                </li>
                 <li className="app_today">
-                  <p>Today</p>
+                  <p>July 2025</p>
                   <Darrow />
                 </li>
               </ul>
@@ -71,7 +71,7 @@ export const DashboardPage = () => {
             <div className="app_list_row">
               <div className="app_list_heading">
                 <h3>Total Income</h3>
-                <p>Rs. 128900/-</p>
+                <p>Rs. 7.68 Cr</p>
               </div>
               <div className="app_list_icons income">
                 <Income />
@@ -83,11 +83,8 @@ export const DashboardPage = () => {
                   <Danalysis />
                   <p>4.2%</p>
                 </li>
-                <li className="app_week">
-                  <p>This week</p>
-                </li>
                 <li className="app_today">
-                  <p>Today</p>
+                  <p>July 2025</p>
                   <Darrow />
                 </li>
               </ul>
@@ -97,7 +94,7 @@ export const DashboardPage = () => {
             <div className="app_list_row">
               <div className="app_list_heading">
                 <h3>Net Profit</h3>
-                <p>Rs. 108006/-</p>
+                <p>Rs. 5.13 Cr</p>
               </div>
               <div className="app_list_icons netprofit">
                 <NetProfit />
@@ -107,13 +104,10 @@ export const DashboardPage = () => {
               <ul className="upitem">
                 <li className="app_graph_itm">
                   <Uanalysis />
-                  <p>6.9%</p>
-                </li>
-                <li className="app_week">
-                  <p>This week</p>
+                  <p>16.4%</p>
                 </li>
                 <li className="app_today">
-                  <p>Today</p>
+                  <p>July 2025</p>
                   <Darrow />
                 </li>
               </ul>
@@ -123,7 +117,7 @@ export const DashboardPage = () => {
             <div className="app_list_row">
               <div className="app_list_heading">
                 <h3>Total Sales</h3>
-                <p>Rs. 23730/-</p>
+                <p>Rs. 8.32 Cr</p>
               </div>
               <div className="app_list_icons sale">
                 <Sale />
@@ -133,13 +127,10 @@ export const DashboardPage = () => {
               <ul className="upitem">
                 <li className="app_graph_itm">
                   <Uanalysis />
-                  <p>6.9%</p>
-                </li>
-                <li className="app_week">
-                  <p>This week</p>
+                  <p>10.3%</p>
                 </li>
                 <li className="app_today">
-                  <p>Today</p>
+                  <p>July 2025</p>
                   <Darrow />
                 </li>
               </ul>
@@ -148,24 +139,40 @@ export const DashboardPage = () => {
           <div className="app_list_info">
             <div className="app_list_row">
               <div className="app_list_heading">
-                <h3>Loan Amounts</h3>
-                <p>Rs. 187300/-</p>
+                <h3>Material Cost</h3>
+                <p>Rs. 4.86 Cr</p>
               </div>
-              <div className="app_list_icons loans">
-                <Loans />
+              <div className="app_list_icons materials">
+                <TypeSample />
               </div>
             </div>
             <div className="app_graph_sec">
               <ul className="downitem">
                 <li className="app_graph_itm">
                   <Danalysis />
-                  <p>6.9%</p>
-                </li>
-                <li className="app_week">
-                  <p>This week</p>
+                  <p>4.3%</p>
                 </li>
                 <li className="app_today">
-                  <p>Today</p>
+                  <p>July 2025</p>
+                  <Darrow />
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="app_list_info">
+            <div className="app_list_row">
+              <div className="app_list_heading">
+                <h3>Pending Loan</h3>
+                <p>Rs. 3.24 Cr</p>
+              </div>
+              <div className="app_list_icons loans">
+                <Loans />
+              </div>
+            </div>
+            <div className="app_graph_sec">
+              <ul className="upitem">
+                <li className="app_graph_itm">
+                  <p>Paid: 1.82 Cr (August 2025)</p>
                   <Darrow />
                 </li>
               </ul>
@@ -177,7 +184,7 @@ export const DashboardPage = () => {
             <li>
               <div className="front_item">
                 <Companies />
-                <p>Warehouse</p>
+                <p>Warehouses</p>
                 <Rarrow />
               </div>
             </li>
@@ -191,7 +198,14 @@ export const DashboardPage = () => {
             <li>
               <div className="front_item">
                 <Plans />
-                <p>Order</p>
+                <p>Orders</p>
+                <Rarrow />
+              </div>
+            </li>
+            <li>
+              <div className="front_item">
+                <Billings />
+                <p>Reports</p>
                 <Rarrow />
               </div>
             </li>
@@ -212,7 +226,7 @@ export const DashboardPage = () => {
             <li>
               <div className="front_item">
                 <Profile />
-                <p>Employee</p>
+                <p>Employees</p>
                 <Rarrow />
               </div>
             </li>
@@ -235,6 +249,9 @@ export const DashboardPage = () => {
         <RevenueChart heights={60} />
         <ExpensesGrossProfitChart heights={60} />
         <AccountsLineChart heights={60} />
+        <div className="app_more_link">
+          <Link to={mainPaths.EVENTS}>More Options</Link>
+        </div>
       </AppDeashboardSection>
     </AppMainLayoutCover>
   );
