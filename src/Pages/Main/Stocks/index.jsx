@@ -24,11 +24,12 @@ export const StocksPage = () => {
     productData.map((item, idx) => ({
       id: `PD${idx + 1}`,
       name: item.name,
-      stock_quantity: `${item.stockQuantity} items`,
-      stock_price: `Rs. ${item.stock_price}/-`,
+      stock_qty: `${item.stockQuantity} items`,
+      stock_price: `Rs. ${item.price}/-`,
       manuf_date: item.manufacture_date,
       expire_date: item.expire_date,
       vendor: item.vendor,
+      description: item.description,
     }));
 
   const tableHeaders =
@@ -48,7 +49,7 @@ export const StocksPage = () => {
       setVisibleColumns((prev) => ({
         ...prev,
         id: false,
-        stock: false,
+        description: false,
       }));
     };
 
@@ -67,13 +68,7 @@ export const StocksPage = () => {
           data={productTableData}
           addTextItem={"Add New Record"}
           handleAddItems={handleAddItems}
-          sortableColumns={[
-            "id",
-            "name",
-            "stock_quantity",
-            "stock_price",
-            "vendor",
-          ]}
+          sortableColumns={["id", "name", "stock_qty", "stock_price", "vendor"]}
           viewBtn={"name"}
           enableStatus={true}
           filterableColumns={["name"]}

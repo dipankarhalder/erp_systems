@@ -52,6 +52,7 @@ export const CareerPage = () => {
       setVisibleColumns((prev) => ({
         ...prev,
         id: false,
+        created_by: false,
       }));
     };
 
