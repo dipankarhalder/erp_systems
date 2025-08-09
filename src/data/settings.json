@@ -43,7 +43,7 @@
     "settingId": "SET006",
     "name": "timezone",
     "description": "Default timezone for the user profile.",
-    "value": "Asia/Kolkata",
+    "value": "Asia/India",
     "type": "string",
     "isEditable": true
   }

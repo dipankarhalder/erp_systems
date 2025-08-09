@@ -10,7 +10,7 @@
     "inStock": "Available",
     "manufacture_date": "06-2025",
     "expire_date": "06-2028",
-    "stock_price": 3399.15,
+    "stock_price": 3399,
     "images": [
       {
         "url": "/1.png",
@@ -30,7 +30,7 @@
     "inStock": "Available",
     "manufacture_date": "03-2025",
     "expire_date": "03-2028",
-    "stock_price": 4799.4,
+    "stock_price": 4799,
     "images": [
       {
         "url": "/2.png",
@@ -70,7 +70,7 @@
     "inStock": "Available",
     "manufacture_date": "04-2025",
     "expire_date": "04-2028",
-    "stock_price": 1999.6,
+    "stock_price": 1999,
     "images": [
       {
         "url": "/4.png",
@@ -110,7 +110,7 @@
     "inStock": "Available",
     "manufacture_date": "03-2025",
     "expire_date": "03-2028",
-    "stock_price": 3149.1,
+    "stock_price": 3149,
     "images": [
       {
         "url": "/1.png",
@@ -130,7 +130,7 @@
     "inStock": "Available",
     "manufacture_date": "06-2025",
     "expire_date": "06-2028",
-    "stock_price": 1959.3,
+    "stock_price": 1959,
     "images": [
       {
         "url": "/2.png",
@@ -150,7 +150,7 @@
     "inStock": "Available",
     "manufacture_date": "05-2025",
     "expire_date": "05-2027",
-    "stock_price": 4948.9,
+    "stock_price": 4948,
     "images": [
       {
         "url": "/3.png",
@@ -170,7 +170,7 @@
     "inStock": "Available",
     "manufacture_date": "08-2025",
     "expire_date": "08-2027",
-    "stock_price": 3598.2,
+    "stock_price": 3598,
     "images": [
       {
         "url": "/6.png",
@@ -190,7 +190,7 @@
     "inStock": "Available",
     "manufacture_date": "03-2025",
     "expire_date": "03-2027",
-    "stock_price": 2999.5,
+    "stock_price": 2999,
     "images": [
       {
         "url": "/3.png",
@@ -210,7 +210,7 @@
     "inStock": "Available",
     "manufacture_date": "09-2025",
     "expire_date": "09-2028",
-    "stock_price": 3297.8,
+    "stock_price": 3297,
     "images": [
       {
         "url": "/1.png",
@@ -230,7 +230,7 @@
     "inStock": "Available",
     "manufacture_date": "07-2025",
     "expire_date": "07-2028",
-    "stock_price": 4199.65,
+    "stock_price": 4199,
     "images": [
       {
         "url": "/4.png",

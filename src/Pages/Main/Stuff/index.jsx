@@ -25,9 +25,9 @@ export const StuffPage = () => {
       id: item.tax_id,
       name: item.tax_name,
       type: item.tax_type,
-      rate: item.rate,
+      rate: `${item.rate}%`,
       applicable_on: item.applicable_on,
-      status_info: item.status,
+      status: item.status,
       created_by: item.created_by,
     }));
 

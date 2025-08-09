@@ -26,7 +26,6 @@ export const AssignmentPage = () => {
       name: item.product_name,
       center: item.work_center,
       qty: `${item.quantity} items`,
-      unit: item.unit_of_measure,
       start_date: item.planned_start_date,
       end_date: item.planned_end_date,
       due_date: item.due_date,
@@ -70,10 +69,10 @@ export const AssignmentPage = () => {
           data={workOrderTableData}
           addTextItem={"Add New Record"}
           handleAddItems={handleAddItems}
-          sortableColumns={["id", "name", "unit", "center", "status"]}
+          sortableColumns={["id", "name", "center", "status"]}
           viewBtn={"name"}
           enableStatus={true}
-          filterableColumns={["center", "status", "unit"]}
+          filterableColumns={["center", "status"]}
           visibleColumns={visibleColumns}
           onToggleColumn={(col) =>
             setVisibleColumns((prev) => ({

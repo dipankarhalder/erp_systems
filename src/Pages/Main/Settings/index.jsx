@@ -26,7 +26,12 @@ export const SettingsPage = () => {
       id: item.settingId,
       name: item.name,
       description: item.description,
-      status_info: item.value ? "Active" : "In-active",
+      status_info:
+        item.type === "boolean" && item.value
+          ? "Yes"
+          : item.value
+          ? item.value
+          : "In-active",
       is_editable: item.isEditable ? "Active" : "In-active",
     }));
 

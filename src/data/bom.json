@@ -3,7 +3,7 @@
     "bom_id": "BOM-1001",
     "product": {
       "product_id": "PROD-001",
-      "name": "Wooden Table",
+      "name": "Polyethylene (PE) Sheets",
       "description": "4-seater wooden dining table",
       "unit_of_measure": "each",
       "revision": "A",
@@ -12,26 +12,20 @@
     "components": [
       {
         "item_id": "COMP-101",
-        "name": "Wooden Plank",
+        "name": "LDPE",
         "quantity": 4,
         "unit_of_measure": "pieces"
       },
       {
         "item_id": "COMP-102",
-        "name": "Nails",
+        "name": "HDPE",
         "quantity": 50,
         "unit_of_measure": "pieces"
       },
       {
         "item_id": "COMP-103",
-        "name": "Wood Glue",
+        "name": "UHMWPE",
         "quantity": 0.5,
-        "unit_of_measure": "liters"
-      },
-      {
-        "item_id": "COMP-104",
-        "name": "Varnish",
-        "quantity": 0.2,
         "unit_of_measure": "liters"
       }
     ],
@@ -45,7 +39,7 @@
     "bom_id": "BOM-1002",
     "product": {
       "product_id": "PROD-002",
-      "name": "Office Chair",
+      "name": "Polypropylene (PP) Sheets",
       "description": "Adjustable ergonomic office chair",
       "unit_of_measure": "each",
       "revision": "B",
@@ -53,27 +47,15 @@
     },
     "components": [
       {
-        "item_id": "COMP-201",
-        "name": "Chair Frame",
-        "quantity": 1,
+        "item_id": "COMP-301",
+        "name": "Rigid PVC (uPVC)",
+        "quantity": 6,
         "unit_of_measure": "pieces"
       },
       {
-        "item_id": "COMP-202",
-        "name": "Cushion Foam",
-        "quantity": 2,
-        "unit_of_measure": "pieces"
-      },
-      {
-        "item_id": "COMP-203",
-        "name": "Wheels",
-        "quantity": 5,
-        "unit_of_measure": "pieces"
-      },
-      {
-        "item_id": "COMP-204",
-        "name": "Hydraulic Cylinder",
-        "quantity": 1,
+        "item_id": "COMP-302",
+        "name": "Wear-resistant",
+        "quantity": 40,
         "unit_of_measure": "pieces"
       }
     ],
@@ -87,7 +69,7 @@
     "bom_id": "BOM-1003",
     "product": {
       "product_id": "PROD-003",
-      "name": "Bookshelf",
+      "name": "Polyvinyl Chloride (PVC) Sheets",
       "description": "5-tier wooden bookshelf",
       "unit_of_measure": "each",
       "revision": "A",
@@ -96,21 +78,15 @@
     "components": [
       {
         "item_id": "COMP-301",
-        "name": "Shelf Plank",
+        "name": "Rigid PVC (uPVC)",
         "quantity": 6,
         "unit_of_measure": "pieces"
       },
       {
         "item_id": "COMP-302",
-        "name": "Screws",
+        "name": "Flexible PVC",
         "quantity": 40,
         "unit_of_measure": "pieces"
-      },
-      {
-        "item_id": "COMP-303",
-        "name": "Wood Stain",
-        "quantity": 0.3,
-        "unit_of_measure": "liters"
       }
     ],
     "metadata": {
@@ -123,7 +99,7 @@
     "bom_id": "BOM-1004",
     "product": {
       "product_id": "PROD-004",
-      "name": "LED Desk Lamp",
+      "name": "Acrylonitrile Butadiene Styrene (ABS) Sheets",
       "description": "Rechargeable LED desk lamp with dimmer",
       "unit_of_measure": "each",
       "revision": "C",
@@ -132,31 +108,13 @@
     "components": [
       {
         "item_id": "COMP-401",
-        "name": "LED Strip",
+        "name": "Automotive",
         "quantity": 1,
         "unit_of_measure": "pieces"
       },
       {
         "item_id": "COMP-402",
-        "name": "Plastic Housing",
-        "quantity": 1,
-        "unit_of_measure": "pieces"
-      },
-      {
-        "item_id": "COMP-403",
-        "name": "Rechargeable Battery",
-        "quantity": 1,
-        "unit_of_measure": "pieces"
-      },
-      {
-        "item_id": "COMP-404",
-        "name": "Dimmer Circuit",
-        "quantity": 1,
-        "unit_of_measure": "pieces"
-      },
-      {
-        "item_id": "COMP-405",
-        "name": "USB Charging Port",
+        "name": "Prototype housing",
         "quantity": 1,
         "unit_of_measure": "pieces"
       }
@@ -171,7 +129,7 @@
     "bom_id": "BOM-1005",
     "product": {
       "product_id": "PROD-005",
-      "name": "Smart Thermostat",
+      "name": "Polytetrafluoroethylene (PTFE) Sheets",
       "description": "Wi-Fi-enabled smart home thermostat",
       "unit_of_measure": "each",
       "revision": "D",
@@ -180,31 +138,13 @@
     "components": [
       {
         "item_id": "COMP-501",
-        "name": "LCD Display",
+        "name": "Teflon",
         "quantity": 1,
         "unit_of_measure": "pieces"
       },
       {
         "item_id": "COMP-502",
-        "name": "Temperature Sensor",
-        "quantity": 1,
-        "unit_of_measure": "pieces"
-      },
-      {
-        "item_id": "COMP-503",
-        "name": "Wi-Fi Module",
-        "quantity": 1,
-        "unit_of_measure": "pieces"
-      },
-      {
-        "item_id": "COMP-504",
-        "name": "Microcontroller",
-        "quantity": 1,
-        "unit_of_measure": "pieces"
-      },
-      {
-        "item_id": "COMP-505",
-        "name": "Plastic Enclosure",
+        "name": "Heat-resistant",
         "quantity": 1,
         "unit_of_measure": "pieces"
       }

@@ -53,7 +53,9 @@ export const ResultsPage = () => {
       setVisibleColumns((prev) => ({
         ...prev,
         id: false,
+        emp_type: false,
         created_at: false,
+        created_by: false,
       }));
     };
 
